@@ -1,0 +1,22 @@
+/* Home.css */
+.home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        /* Adjust the height as needed */
+}
+
+.animation-left {
+        align-self: flex-start;
+}
+
+.animation-right {
+        align-self: flex-end;
+}
+
+.text-center {
+        text-align: center;
+        margin: 0 auto;
+}
