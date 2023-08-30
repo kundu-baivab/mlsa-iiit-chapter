@@ -10,21 +10,26 @@
 
 .animation-left {
         align-self: flex-start;
-        width: 40%;
+        width: 30%;
         /* Adjust the width as needed */
-        transform: translateX(-20%);
+        transform: translateX(-10%);
         /* Adjust the translation value to fine-tune */
 }
 
 .animation-right {
         align-self: flex-end;
-        width: 40%;
-        /* Adjust the width as needed */
-        transform: translateX(20%);
-        /* Adjust the translation value to fine-tune */
+        width: 30%;
+        transform: translateX(10%);
 }
 
 .text-center {
         text-align: center;
-        margin: 0 auto;
+        margin-top: 20px;
 }
+
+/* Title.css */
+.title-logo {
+        width: 150px;
+        height: auto;
+}
+

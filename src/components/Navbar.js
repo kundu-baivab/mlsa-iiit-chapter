@@ -5,8 +5,8 @@ function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light nav-design fixed-top">
-        <a className="navbar-brand" style={{ color: "white" }} href="#">
-          MLSA - IIIT
+        <a className="navbar-brand mx-3" style={{ color: "white" }} href="#">
+          MLSA: IIIT - BBSR
         </a>
         <button
           className="navbar-toggler"
