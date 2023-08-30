@@ -1,28 +1,38 @@
-/* Home.css */
-.home-container {
+.text-center {
+        text-align: center;
+        margin-top: 20px;
+}
+
+.title-logo {
+        width: 150px;
+        height: auto;
+        margin-top: 8px;
+}
+
+.animation-container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: space-between;
-        height: 100vh;
-        /* Adjust the height as needed */
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+}
+
+.animation-left,
+.animation-right {
+        width: 30%;
 }
 
 .animation-left {
-        align-self: flex-start;
-        width: 30%;
-        /* Adjust the width as needed */
-        transform: translateX(-10%);
-        /* Adjust the translation value to fine-tune */
+        margin-right: auto;
+        /* Push to the left */
 }
 
 .animation-right {
-        align-self: flex-end;
-        width: 30%;
-        transform: translateX(10%);
+        margin-left: auto;
+        /* Push to the right */
 }
 
-.text-center {
+.button-container {
         text-align: center;
         margin-top: 20px;
 }
@@ -33,3 +43,8 @@
         height: auto;
 }
 
+.badge-logo {
+        margin-top: 10px;
+        width: 160px;
+        height: 170px;
+}
