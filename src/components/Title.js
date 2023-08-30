@@ -18,12 +18,16 @@ function Title() {
         <h1>IIIT Bhubaneswar</h1>
         <img src="/assets/mlsa_badge.png" className="badge-logo" alt="badge" />
       </div>
-      <div className="animation-left">
-        <Lottie animationData={ms1} alt="..." />
+
+      <div className="animation">
+        <div className="animation-left">
+          <Lottie animationData={ms1} alt="..." />
+        </div>
+        <div className="animation-right">
+          <Lottie animationData={ms2} alt="..." />
+        </div>
       </div>
-      <div className="animation-right">
-        <Lottie animationData={ms2} alt="..." />
-      </div>
+
       <div>
         <br />
         <button type="button" className="btn btn-secondary btn-lg btn-block">
