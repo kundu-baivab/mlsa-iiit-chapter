@@ -4,7 +4,7 @@ import arrow from "../images/arrow.json";
 import "../CSS_files/Application.css";
 
 function Application() {
-  const numberOfArrows = 5; // Set the number of arrow animations
+  const numberOfArrows = 8; // Number of arrow animations
 
   return (
     <div className="custom-container">
@@ -65,8 +65,9 @@ function Application() {
             <a href="https://studentambassadors.microsoft.com/en-US/">
               https://studentambassadors.microsoft.com/en-US/
             </a>{" "}
-            Click on "<strong style={{ color: "#4b6cb7" }}>Apply now</strong>"
-            and Login with any of the mentioned options available.
+            . Click on "<strong style={{ color: "#4b6cb7" }}>Apply now</strong>"
+            and <strong style={{ color: "#4b6cb7" }}>Login</strong> with any of
+            the mentioned options available.
           </li>
           <br />
           <li>
@@ -98,9 +99,76 @@ function Application() {
                 <strong style={{ color: "#4b6cb7" }}>Welcome</strong>
               </li>
             </ul>
+            <br />
+            <p>
+              Each field has to be answered with either a video or a written
+              sample. Please note: It is necessary to answer at least one
+              question in the form of a video.
+              <br />
+              <strong style={{ color: "#4b6cb7" }}>
+                Tips to answer these questions:
+              </strong>
+              <br />
+              <ul>
+                <li>
+                  Make sure your answers are honest and genuine, try to explain
+                  why you are passionate about technology, and what made you
+                  inspire in your best way, that is very important!
+                </li>
+                <br />
+                <li>
+                  Mention all your achievements including the projects you are
+                  working on/completed, what are the programming languages
+                  you've learnt,{" "}
+                  <strong style={{ color: "#4b6cb7" }}>
+                    competitions/Workshops
+                  </strong>{" "}
+                  you have{" "}
+                  <strong style={{ color: "#4b6cb7" }}>
+                    organized/participated/won
+                  </strong>
+                  .
+                </li>
+                <br />
+                <li>
+                  Take an example and explain how you would teach that topic to
+                  your peers.
+                </li>
+                <br />
+                <li>
+                  If you are hosting an event, explain how would you plan on
+                  organizing it from the start, how would you promote it to
+                  gather as many students possible to attend the event.
+                </li>
+              </ul>
+            </p>
+            <br />
+          </li>
+          <li>
+            Then comes the{" "}
+            <strong style={{ color: "#4b6cb7" }}>social media</strong> section,
+            where you can include the links of all the social media platforms
+            you use, as mentioned in the fields.
           </li>
           <br />
+          <p>
+            Also do not hesitate to share the links of any of your blogs/YouTube
+            videos etc. thinking there is nothing much in it or there is less
+            content, nothing is less when you try to share your knowledge or
+            ideas, what you share and how you share it, is important! :) This is
+            also where they will get to know more about you!
+          </p>
+          <br />
+          <li>
+            Once you have completed filling the social media section, mention
+            all the <strong style={{ color: "#4b6cb7" }}>technologies</strong>{" "}
+            you are interested in! And if you think there is some additional
+            information you want to add, you can add it in the next field asked
+            in Additional Information section, after the technologies list!
+          </li>
         </ol>
+        <br />
+        <br />
       </div>
       <div className="custom-arrow-column right">
         {[...Array(numberOfArrows)].map((_, index) => (
