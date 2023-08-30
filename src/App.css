@@ -2,6 +2,20 @@
         background: linear-gradient(to left, #4b6cb7, #182848);
 }
 
+.nav-design:hover {
+        background: linear-gradient(to right, #4b6cb7, #182848);
+}
+
 .link-text {
         color: white;
+}
+
+.footer-design {
+        background: linear-gradient(to left, #4b6cb7, #182848);
+        transition: background 0.5s ease;
+}
+
+.footer-design:hover {
+        background: linear-gradient(to right, #4b6cb7, #182848);
+
 }
