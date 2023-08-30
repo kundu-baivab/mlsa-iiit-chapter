@@ -13,12 +13,13 @@ function Title() {
           className="title-logo"
           alt="iiit_logo"
         />
+        <br />
         <h1>Microsoft Learn Student Ambassadors</h1>
         <h3>@</h3>
         <h1>IIIT Bhubaneswar</h1>
         <img src="/assets/mlsa_badge.png" className="badge-logo" alt="badge" />
       </div>
-
+      <br />
       <div className="animation">
         <div className="animation-left">
           <Lottie animationData={ms1} alt="..." />

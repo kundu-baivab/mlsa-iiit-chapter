@@ -9,6 +9,30 @@
         margin-top: 8px;
 }
 
+@keyframes slide {
+        from {
+                transform: translateX(-20px);
+                /* Starting position */
+                opacity: 0;
+                /* Starting opacity */
+        }
+
+        to {
+                transform: translateX(0);
+                /* Ending position */
+                opacity: 1;
+                /* Ending opacity */
+        }
+}
+
+.sliding-box {
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid #0078D4;
+        animation: slide 1s ease-in-out;
+        /* Use the defined animation */
+}
+
 .animation-container {
         display: flex;
         justify-content: space-between;
