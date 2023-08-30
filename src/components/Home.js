@@ -16,6 +16,8 @@ function Home() {
       <div className="animation-right">
         <Lottie animationData={ms2} alt="..." />
       </div>
+      <br />
+      <br />
     </div>
   );
 }

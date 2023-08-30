@@ -4,7 +4,7 @@ import "../CSS_files/Navbar.css";
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light nav-design">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light nav-design fixed-top">
         <a className="navbar-brand" style={{ color: "white" }} href="#">
           MLSA - IIIT
         </a>
@@ -39,8 +39,6 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <br />
-      <br />
       <br />
       <br />
     </div>
