@@ -3,10 +3,10 @@ import React from "react";
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light fixed-top pt-3 pb-3">
-        <button className="navbar-brand mx-3 header-name">
-          <a href="/">RKS</a>
-        </button>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light nav-design">
+        <a className="navbar-brand" style={{ color: "white" }} href="#">
+          MLSA - IIIT
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -18,26 +18,30 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse " id="navbarNav">
-          <ul className="navbar-nav ml-auto mx-3 links">
-            <li className="nav-item active">
-              <a className="nav-link text-white" href="/about">
-                About Me
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ml-auto mx-3 p-1">
+            <li className="nav-item ">
+              <a className="nav-link" href="#" style={{ color: "white" }}>
+                How to Apply
               </a>
             </li>
-            <li className="nav-item active">
-              <a className="nav-link text-white" href="/projects">
-                Projects
+            <li className="nav-item">
+              <a className="nav-link" href="#" style={{ color: "white" }}>
+                Milestones
               </a>
             </li>
-            <li className="nav-item active">
-              <a className="nav-link text-white" href="/contact">
-                Contact Me
+            <li className="nav-item">
+              <a className="nav-link" href="#" style={{ color: "white" }}>
+                IIIT-BBSR Chapter
               </a>
             </li>
           </ul>
         </div>
       </nav>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
