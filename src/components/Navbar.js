@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light nav-design">
-        <a className="navbar-brand" style={{ color: "white" }} href="#">
+        <a className="navbar-brand mx-3" style={{ color: "white" }} href="#">
           MLSA - IIIT
         </a>
         <button
