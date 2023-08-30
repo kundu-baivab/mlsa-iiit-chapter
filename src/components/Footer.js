@@ -7,7 +7,7 @@ export default function Footer() {
         className="text-white pb-3 pt-3 text-align-center text-center fixed-bottom"
         style={{ background: "linear-gradient(to left, #4b6cb7, #182848)" }}
       >
-        Copyright &copy; Made with 💜 by Rajnish | All Rights Reserved
+        <b>Copyright &copy; MLSA Chapter - IIIT Bhubaneswar</b>
       </div>
     </div>
   );
