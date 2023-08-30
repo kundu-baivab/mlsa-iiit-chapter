@@ -22,17 +22,29 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto mx-3 p-1">
             <li className="nav-item ">
-              <a className="nav-link" href="#" style={{ color: "white" }}>
+              <a
+                className="nav-link"
+                href="/application"
+                style={{ color: "white" }}
+              >
                 How to Apply
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" style={{ color: "white" }}>
+              <a
+                className="nav-link"
+                href="/milestones"
+                style={{ color: "white" }}
+              >
                 Milestones
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" style={{ color: "white" }}>
+              <a
+                className="nav-link"
+                href="/chapter"
+                style={{ color: "white" }}
+              >
                 IIIT-BBSR Chapter
               </a>
             </li>
