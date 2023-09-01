@@ -22,7 +22,6 @@
 
 .custom-arrow {
         margin: 10px 0;
-        /* Adjust the spacing between arrows */
 }
 
 .custom-content {
@@ -32,4 +31,52 @@
 .apply-image {
         width: 30rem;
         height: 30rem;
+}
+
+.typed-content {
+        text-align: center;
+        font-size: 35px;
+        color: #4b6cb7;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-left: 12rem;
+}
+
+@media screen and (max-width: 1020px) {
+        .typed-content {
+                font-size: 26px;
+                margin-left: 10rem;
+        }
+}
+
+@media screen and (max-width: 768px) {
+        .typed-content {
+                font-size: 24px;
+                margin-left: 6.8rem;
+        }
+}
+
+@media screen and (max-width: 600px) {
+        .typed-content {
+                font-size: 18px;
+                margin-left: 7.5rem;
+        }
+}
+
+@media screen and (max-width: 420px) {
+        .typed-content {
+                font-size: 16px;
+        }
+}
+
+@media screen and (max-width: 360px) {
+        .typed-content {
+                font-size: 14px;
+        }
+}
+
+@media screen and (max-width: 256px) {
+        .typed-content {
+                font-size: 12px;
+        }
 }

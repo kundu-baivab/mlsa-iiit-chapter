@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Lottie from "lottie-react";
+import Typed from "typed.js";
 import arrow from "../images/arrow.json";
 import "../CSS_files/Application.css";
 
 function Application() {
   const numberOfArrows = 8; // Number of arrow animations
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["HOW TO APPLY"],
+      typeSpeed: 70,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <div className="custom-container">
@@ -16,6 +30,11 @@ function Application() {
         ))}
       </div>
       <div className="custom-content">
+        <span ref={el} className="typed-content"></span> {/*JSX CONTENT*/}
+        <br />
+        <br />
+        <br />
+        <br />
         <button
           type="button"
           className="btn btn-secondary btn-lg btn-block my-3"
