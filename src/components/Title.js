@@ -36,23 +36,30 @@ function Title() {
         </button>
         <br />
         <p>
-          Microsoft Learn Student Ambassadors Program is a program to bring
-          together all the students from all over the world who have the passion
-          for Technology, have the desire and craze to learn more about
-          technology and help the community. It is a student-led community
-          supported by Microsoft, aimed at empowering students to contribute to
-          their technical communities while gaining skills and experiences
-          related to Microsoft technologies. <br />
+          <strong style={{ color: "#4b6cb7" }}>
+            Microsoft Learn Student Ambassadors
+          </strong>{" "}
+          Program is a program to bring together all the students from all over
+          the world who have the passion for Technology, have the desire and
+          craze to learn more about technology and help the community. It is a
+          student-led community supported by{" "}
+          <strong style={{ color: "#4b6cb7" }}>Microsoft</strong>, aimed at
+          empowering students to contribute to their technical communities while
+          gaining skills and experiences related to Microsoft technologies.{" "}
           <br />
-          MLSAs collaborate with Microsoft, learn about Azure and other
+          <br />
+          MLSAs collaborate with{" "}
+          <strong style={{ color: "#4b6cb7" }}>Microsoft</strong>, learn about
+          <strong style={{ color: "#4b6cb7" }}> Azure</strong> and other
           Microsoft services, and share their knowledge and experiences with
           their peers. The Ambassadors get an opportunity to interact with their
           peers, mentors, Professionals, learn various Microsoft technologies,
           and implement it in the real world. This program sponsors all the
           undergraduate and postgraduate students in terms of technology and all
-          the events they do in this community. Once you are an ambassador, you
-          are introduced to the amazing community and you can start hosting
-          events!
+          the events they do in this{" "}
+          <strong style={{ color: "#4b6cb7" }}>community</strong>. Once you are
+          an ambassador, you are introduced to the amazing community and you can
+          start <strong style={{ color: "#4b6cb7" }}>hosting</strong> events!
         </p>
         <br />
         <br />
