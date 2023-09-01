@@ -5,12 +5,12 @@ import arrow from "../images/arrow.json";
 import "../CSS_files/Application.css";
 
 function Application() {
-  const numberOfArrows = 8; // Number of arrow animations
+  const numberOfArrows = 9; // Number of arrow animations
   const el = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["HOW TO APPLY"],
+      strings: ["HOW TO APPLY ? "],
       typeSpeed: 70,
       loop: true,
     });
@@ -29,6 +29,7 @@ function Application() {
           </div>
         ))}
       </div>
+
       <div className="custom-content">
         <span ref={el} className="typed-content"></span> {/*JSX CONTENT*/}
         <br />
@@ -193,6 +194,7 @@ function Application() {
         <br />
         <br />
       </div>
+
       <div className="custom-arrow-column right">
         {[...Array(numberOfArrows)].map((_, index) => (
           <div className="custom-arrow" key={index}>
