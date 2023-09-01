@@ -120,9 +120,13 @@ function Application() {
             </ul>
             <br />
             <p>
-              Each field has to be answered with either a video or a written
-              sample. Please note: It is necessary to answer at least one
-              question in the form of a video.
+              Two of the above mentioned are needed to be{" "}
+              <strong style={{ color: "#4b6cb7" }}>essay type</strong>{" "}
+              descriptive answer under{" "}
+              <strong style={{ color: "#4b6cb7" }}>2000 characters</strong> and
+              one of them must be a video with duration atmost{" "}
+              <strong style={{ color: "#4b6cb7" }}>2 minutes</strong>.
+              <br />
               <br />
               <strong style={{ color: "#4b6cb7" }}>
                 Tips to answer these questions:
