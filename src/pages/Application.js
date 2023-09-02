@@ -29,7 +29,6 @@ function Application() {
           </div>
         ))}
       </div>
-
       <div className="custom-content">
         <span ref={el} className="typed-content"></span> {/*JSX CONTENT*/}
         <br />

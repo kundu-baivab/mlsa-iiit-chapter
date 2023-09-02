@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Zero() {
   return (
-    <div className="container">
+    <div className="container1">
       <div className="centered-content">
         <Lottie animationData={robot} alt="..." className="robot-animation" />
       </div>
