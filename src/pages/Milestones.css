@@ -1,16 +1,15 @@
 .parent-container {
-    padding: 20px;
-    background-color: #f7f7f7;
+    padding: 50px;
   }
   
   .intro-container {
-    /* border: 2px dotted #999; */
     border-top: 6px dashed #000;
     border-right: 6px dashed #000;
     border-bottom: 6px dashed #000;
     border-left: 6px dashed #000;
     padding: 20px;
     background-color: #fff;
+    transition: transform 0.3s ease-in-out;
   }
   
   .intro-container h2 {
@@ -31,6 +30,7 @@
     padding: 20px;
     border: 6px dashed #000;
     background-color: #f2f2f2;
+    transition: transform 0.3s ease-in-out;
   }
   
   .alpha-container h3,
@@ -73,12 +73,43 @@
   .gold-perks ul li {
     margin-bottom: 5px;
   }
-  
-  .parent-container, .intro-container, .alpha-container, .beta-container, .gold-container {
-    border-radius: 8px;
-  }
-  
-  .parent-container, .alpha-container, .beta-container, .gold-container {
+
+  .alpha-container, .beta-container, .gold-container {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
+
+  @keyframes popup {
+    0% {transform: scale(1);}
+    /* 50% {transform: scale(1.1);} */
+    100% {transform: scale(1.1);}
+
+  }
+  .intro-container:hover{
+    animation: popup 1s ease-in-out forwards;
+    transform: scale(1.1);
+  }
+  .intro-container:not(:hover){
+    transform: scale(1);
+  }
+  .alpha-container:hover{
+    animation: popup 1s ease-in-out forwards;
+    transform: scale(1.1);
+  }
+  .alpha-container:not(:hover){
+    transform: scale(1);
+  }
+  .beta-container:hover{
+    animation: popup 1s ease-in-out forwards;
+    transform: scale(1.1);
+  }
+  .beta-container:not(:hover){
+    transform: scale(1);
+  }
+  .gold-container:hover{
+    animation: popup 1s ease-in-out forwards;
+    transform: scale(1.1);
+  }
+  .gold-container:not(:hover){
+    transform: scale(1);
+  }

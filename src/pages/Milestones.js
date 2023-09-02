@@ -1,12 +1,19 @@
 import React from "react";
 import './Milestones.css'
+import ImageFade from '..components/ImageFade.js';
+// import '../components/ImageFade'
+import '../CSS_files/imagefade.css'
+
 
 function Milestones() {
   return (
     <>
-      <div className="parent-container">
+      <div className="parent-container ">
+          <div className="App">
+            <ImageFade />
+          </div>
 
-          <div className="intro-container py-5 dotted-border-box">
+          <div className="intro-container py-5 dotted-border-box popup">
             <h2>MLSA MILESTONES</h2>
             <p>
               Student Ambassadors are required to complete various pre-identified activities in order to grow their skills on a well-defined road to success. As you complete these activities, your program milestones are advanced. Additional program benefits are unlocked too. 
@@ -15,7 +22,7 @@ function Milestones() {
             </p>
             </div>
 
-            <div className="alpha-container">
+            <div className="alpha-container popup">
               <h3>ALPHA MLSA</h3>
               <div className="alpha-child">
                 <p>Student Ambassadors that complete a learning path on Microsoft Learn will earn the Alpha badge.</p>
@@ -32,7 +39,7 @@ function Milestones() {
               </div>
               </div>
 
-              <div className="beta-container">
+              <div className="beta-container popup">
                 <h3>BETA MLSA</h3>
               <div className="beta-child">
                 <p>Student Ambassadors who plan and host an event for other students in their community will earn the Beta badge.</p>
@@ -48,7 +55,7 @@ function Milestones() {
               </div>
               </div>
 
-                <div className="gold-container">
+                <div className="gold-container popup">
                 <h3>GOLD MLSA</h3>
               <div className="gold-child">
                 <p>Student Ambassadors who have gone above and beyond serving their local community will be invited to the Gold milestone.</p>
@@ -69,4 +76,8 @@ function Milestones() {
 }
 
 export default Milestones;
+
+
+
+
 
