@@ -5,7 +5,11 @@ function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light nav-design fixed-top">
-        <a className="navbar-brand mx-3" style={{ color: "white" }} href="/">
+        <a
+          className="navbar-brand mx-3"
+          style={{ color: "white" }}
+          href="/home"
+        >
           MLSA: IIIT - BBSR
         </a>
         <button
