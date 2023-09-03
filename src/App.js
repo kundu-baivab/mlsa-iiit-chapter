@@ -1,17 +1,17 @@
 import "./App.css";
 import Zero from "./components/Zero";
+import React from "react";
 import Title from "./components/Title";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Application from "./pages/Application";
 import Milestones from "./pages/Milestones";
 import Chapter from "./pages/Chapter";
+
+// import { Link } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Navbar />
       <div className="container">
         <BrowserRouter>
           <Routes>
@@ -23,7 +23,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
-      <Footer />
+
     </div>
   );
 }

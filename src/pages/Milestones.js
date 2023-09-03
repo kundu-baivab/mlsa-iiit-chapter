@@ -1,7 +1,10 @@
 import React from "react";
+
 import './Milestones.css'
 import 'animate.css'
 
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Milestones() {
 
@@ -108,6 +111,13 @@ function Milestones() {
             </div>
 
     </>
+
+    <div>
+      <Navbar />
+      <h1>Milestones</h1>
+      <Footer />
+    </div>
+
   );
 }
 

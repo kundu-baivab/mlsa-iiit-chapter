@@ -13,7 +13,7 @@ function Zero() {
       <div>
         <Link to="/home">
           <button class="button-29" role="button">
-            Go To HomePage
+            Let's Begin!
           </button>
         </Link>
       </div>
