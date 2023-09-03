@@ -15,6 +15,7 @@ function Application() {
       strings: ["HOW TO APPLY ? "],
       typeSpeed: 70,
       loop: true,
+      showCursor: false,
     });
 
     return () => {

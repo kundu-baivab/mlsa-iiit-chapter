@@ -1,17 +1,18 @@
 import React from "react";
 import "../CSS_files/Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light nav-design fixed-top">
-        <a
+        <Link
+          to="/home"
           className="navbar-brand mx-3"
           style={{ color: "white" }}
-          href="/home"
         >
           MLSA: IIIT - BBSR
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,31 +27,31 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto mx-3 p-1">
             <li className="nav-item ">
-              <a
+              <Link
+                to="/application"
                 className="nav-link"
-                href="/application"
                 style={{ color: "white" }}
               >
                 How to Apply
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
+                to="/milestones"
                 className="nav-link"
-                href="/milestones"
                 style={{ color: "white" }}
               >
                 Milestones
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
+                to="/chapter"
                 className="nav-link"
-                href="/chapter"
                 style={{ color: "white" }}
               >
                 IIIT-BBSR Chapter
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

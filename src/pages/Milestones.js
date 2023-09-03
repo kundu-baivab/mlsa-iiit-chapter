@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 function Milestones() {
   return (
     <>
+      <Navbar />
       <div className="parent-container ">
         <div className="container1">
           <div className="child1">
