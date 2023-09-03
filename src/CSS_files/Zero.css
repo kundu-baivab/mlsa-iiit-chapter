@@ -1,12 +1,77 @@
-body {
-        background: linear-gradient(to top, #ffefba, #ffffff);
+#typed-text {
+        text-align: center;
+        font-size: 70px;
+        color: #4b6cb7;
+        font-weight: bold;
+        margin-top: 5rem;
+        margin-left: 3.5rem;
+}
+
+@media screen and (max-width: 1020px) {
+        #typed-text {
+                font-size: 60px;
+                margin-left: 2rem;
+        }
+}
+
+/* Media query for screens with a maximum width of 900px */
+@media screen and (max-width: 900px) {
+        #typed-text {
+                font-size: 50px;
+                margin-left: 1rem;
+        }
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+        #typed-text {
+                font-size: 40px;
+                margin-top: 3rem;
+                margin-left: 0.5rem;
+        }
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+        #typed-text {
+                font-size: 35px;
+                margin-top: 2rem;
+                margin-left: 0.5rem;
+        }
+}
+
+/* Media query for screens with a maximum width of 420px */
+@media screen and (max-width: 420px) {
+        #typed-text {
+                font-size: 30px;
+                margin-top: 1.5rem;
+                margin-left: 0.2rem;
+        }
+}
+
+/* Media query for screens with a maximum width of 360px */
+@media screen and (max-width: 360px) {
+        #typed-text {
+                font-size: 25px;
+                margin-top: 1rem;
+                margin-left: 0.1rem;
+        }
+}
+
+/* Media query for screens with a maximum width of 256px */
+@media screen and (max-width: 256px) {
+        #typed-text {
+                font-size: 20px;
+                margin-top: 0.5rem;
+                margin-left: 0.1rem;
+        }
 }
 
 .container1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 80vh;
 }
 
 .centered-content {
