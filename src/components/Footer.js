@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div>
       <div className="text-white pb-3 pt-3 text-align-center text-center fixed-bottom footer-design">
-        <b>Copyright &copy; MLSA Chapter - IIIT Bhubaneswar</b>
+        <b>Copyright &copy; MLSA Chapter @ IIIT Bhubaneswar</b>
       </div>
     </div>
   );
