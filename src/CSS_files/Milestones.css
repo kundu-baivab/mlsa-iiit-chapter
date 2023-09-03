@@ -1,0 +1,156 @@
+.parent-container {
+  padding: 50px;
+}
+
+.intro-container {
+  border: 3px dashed #000;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.intro-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.intro-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.alpha-container,
+.beta-container,
+.gold-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 3px dashed #000;
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  transition: transform 0.3s ease-in-out;
+}
+
+.alpha-container h3,
+.beta-container h3,
+.gold-container h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.alpha-child,
+.beta-child,
+.gold-child {
+  margin-top: 10px;
+}
+
+.alpha-child p,
+.beta-child p,
+.gold-child p {
+  font-size: 16px;
+  color: #555;
+}
+
+.alpha-perks,
+.beta-perks,
+.gold-perks {
+  margin-top: 10px;
+}
+
+.alpha-perks ul,
+.beta-perks ul,
+.gold-perks ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.alpha-perks ul li,
+.beta-perks ul li,
+.gold-perks ul li {
+  margin-bottom: 5px;
+}
+
+.alpha-container, .beta-container, .gold-container {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+@keyframes popup {
+  0% {transform: scale(1);}
+  /* 50% {transform: scale(1.1);} */
+  100% {transform: scale(1.1);}
+
+}
+.intro-container:hover{
+  animation: popup 1s ease-in-out forwards;
+  transform: scale(1.1);
+}
+.intro-container:not(:hover){
+  transform: scale(1);
+}
+.alpha-container:hover{
+  animation: popup 1s ease-in-out forwards;
+  transform: scale(1.1);
+}
+.alpha-container:not(:hover){
+  transform: scale(1);
+}
+.beta-container:hover{
+  animation: popup 1s ease-in-out forwards;
+  transform: scale(1.1);
+}
+.beta-container:not(:hover){
+  transform: scale(1);
+}
+.gold-container:hover{
+  animation: popup 1s ease-in-out forwards;
+  transform: scale(1.1);
+}
+.gold-container:not(:hover){
+  transform: scale(1);
+} 
+
+.new-image,.alpha-image,.beta-image,.gold-image{
+  width: 350px; 
+}
+.new-image-container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alpha-image-container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beta-image-container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gold-image-container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.child1,.child2,.child3,.child4{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
