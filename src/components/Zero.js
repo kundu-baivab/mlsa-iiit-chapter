@@ -12,7 +12,7 @@ function Zero() {
       strings: ["MLSA @ IIIT BBSR"],
       typeSpeed: 70,
       showCursor: false,
-      loop: true,
+      loop: false,
     };
 
     typedRef.current = new Typed("#typed-text", options);
@@ -25,9 +25,11 @@ function Zero() {
 
   return (
     <>
+    
+    
       <div id="typed-text"></div> {/* Typed text at the top */}
       <div className="container1">
-        <div className="centered-content">
+        <div className="centered-content ">
           <Lottie animationData={robot} alt="..." className="robot-animation" />
         </div>
         <div>
@@ -35,9 +37,10 @@ function Zero() {
             <button className="button-29" role="button">
               Let's Begin!
             </button>
-          </Link>
+          </Link> 
         </div>
       </div>
+     
     </>
   );
 }
