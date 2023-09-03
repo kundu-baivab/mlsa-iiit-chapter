@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLSA</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="mask">
+        <a href="/" class="navhead">WELCOME TO ADMIN PAGE</a>
+        <ul class="list">
+            <% if(user) {%>
+                <li class="navhead">Hey, <%= user.username %></li>
+                <li><a href="/adminlogout" class="navhead">LOG OUT</a></li>
+            <%}else{%>
+                <li><a href="/adminlogin" class="navhead">LOG IN</a></li>
+                <li><a href="/adminsignup" class="navhead">SIGN UP</a></li>
+            <%}%>
+        </ul>
+    </nav>
