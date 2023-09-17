@@ -72,9 +72,9 @@ function Title() {
           <br />
           <br />
           <br />
-          <Footer />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -30,7 +30,6 @@
         padding: 10px;
         border: 2px solid #0078D4;
         animation: slide 1s ease-in-out;
-        /* Use the defined animation */
 }
 
 .animation-container {
