@@ -20,35 +20,27 @@ function Zero() {
 
   const logoStyle = {
     position: "absolute",
-    bottom: "15px", // Adjust as needed
-    right: "15px", // Adjust as needed
-    width: "80px", // Adjust as needed
-    height: "80px", // Adjust as needed
+    bottom: "15px",
+    right: "15px",
+    width: "80px",
+    height: "80px",
   };
 
   const btnStyle = {
     position: "absolute",
-    bottom: "20px", // Adjust as needed
-    left: "15px", // Adjust as needed
-    width: "190px", // Adjust as needed
-    height: "57.3px", // Adjust as needed
+    bottom: "20px",
+    left: "15px",
+    width: "190px",
+    height: "57.3px",
   };
 
   return (
     <div>
       <div style={containerStyle}>
         <a href="/home">
-          <img
-            src="./assets/btnLetsBegin.png" // Provide the correct path to your logo
-            alt="Button"
-            style={btnStyle}
-          />
+          <img src="./assets/btnLetsBegin.png" alt="Button" style={btnStyle} />
         </a>
-        <img
-          src="./assets/iiit_logo.png" // Provide the correct path to your logo
-          alt="Logo"
-          style={logoStyle}
-        />
+        <img src="./assets/iiit_logo.png" alt="Logo" style={logoStyle} />
       </div>
     </div>
   );
