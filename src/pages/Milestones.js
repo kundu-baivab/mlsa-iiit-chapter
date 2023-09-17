@@ -8,7 +8,7 @@ function Milestones() {
   return (
     <>
       <Navbar />
-      <div className="parent-container ">
+      <div className="parent-container container">
         <div className="container1">
           <div className="child1">
             <div className="new-image-container animate__animated animate__slideInLeft ">

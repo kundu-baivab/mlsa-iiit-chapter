@@ -26,7 +26,7 @@ function Application() {
   return (
     <div>
       <Navbar />
-      <div className="custom-container">
+      <div className="custom-container container">
         <div className="custom-arrow-column left">
           {[...Array(numberOfArrows)].map((_, index) => (
             <div className="custom-arrow" key={index}>

@@ -1,47 +1,56 @@
-import React, { useEffect, useRef } from "react";
-import "../CSS_files/Zero.css";
-import Lottie from "lottie-react";
-import robot from "../images/robot.json";
-import { Link } from "react-router-dom";
-import Typed from "typed.js";
+// import { Link } from "react-router-dom";
 
 function Zero() {
-  const typedRef = useRef(null);
-  useEffect(() => {
-    const options = {
-      strings: ["MLSA @ IIIT BBSR"],
-      typeSpeed: 70,
-      showCursor: false,
-      loop: false,
-    };
+  const containerStyle = {
+    backgroundImage: 'url("./assets/mlsa_bg.png")',
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    minHeight: "100vh",
+    position: "relative",
+  };
 
-    typedRef.current = new Typed("#typed-text", options);
-    return () => {
-      if (typedRef.current) {
-        typedRef.current.destroy();
-      }
-    };
-  }, []);
+  const gifStyle = {
+    position: "absolute",
+    top: "10px",
+    right: "10px",
+    width: "150px",
+    height: "150px",
+  };
+
+  const logoStyle = {
+    position: "absolute",
+    bottom: "15px", // Adjust as needed
+    right: "15px", // Adjust as needed
+    width: "80px", // Adjust as needed
+    height: "80px", // Adjust as needed
+  };
+
+  const btnStyle = {
+    position: "absolute",
+    bottom: "20px", // Adjust as needed
+    left: "15px", // Adjust as needed
+    width: "190px", // Adjust as needed
+    height: "57.3px", // Adjust as needed
+  };
 
   return (
-    <>
-    
-    
-      <div id="typed-text"></div> {/* Typed text at the top */}
-      <div className="container1">
-        <div className="centered-content ">
-          <Lottie animationData={robot} alt="..." className="robot-animation" />
-        </div>
-        <div>
-          <Link to="/home">
-            <button className="button-29" role="button">
-              Let's Begin!
-            </button>
-          </Link> 
-        </div>
+    <div>
+      <div style={containerStyle}>
+        <a href="/home">
+          <img
+            src="./assets/btnLetsBegin.png" // Provide the correct path to your logo
+            alt="Button"
+            style={btnStyle}
+          />
+        </a>
+        <img
+          src="./assets/iiit_logo.png" // Provide the correct path to your logo
+          alt="Logo"
+          style={logoStyle}
+        />
       </div>
-     
-    </>
+    </div>
   );
 }
 

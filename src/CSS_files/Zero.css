@@ -5,6 +5,11 @@ body {
         /* overflow-y: hidden; */
 }
 
+.zero-page{
+     margin: 0;
+     background-color: black;   
+}
+
 #typed-text {
         text-align: center;
         font-size: 90px;

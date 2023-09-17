@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <div>
       <Navbar />
-      <h1 className="projects my-5 pb-2 font-weight-bold typed-content">
+      <h1 className="projects my-5 pb-2 font-weight-bold typed-content container">
         <span ref={el} />
       </h1>
       <br />
