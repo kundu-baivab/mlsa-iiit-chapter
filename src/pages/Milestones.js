@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
 import "../CSS_files/Milestones.css";
 import "animate.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function Milestones() {
+  const [showAlphaPopup, setShowAlphaPopup] = useState(false);
+  const [hovered,setHovered]=useState(false);
+
+  const handleHover = () => {
+    setHovered(true);
+  };
+
+  /*const handleMouseLeave = () => {
+    setHovered(false);
+  };*/
+
   return (
     <>
       <Navbar />
       <div className="parent-container container">
         <div className="container2">
           <div className="child2">
-            <div className="alpha-image-container">
+            <div className={`alpha-image-container ${hovered ? 'hovered' : ''}`}
+              onMouseEnter={handleHover}>
               <img
                 className="alpha-image"
                 src="./assets/LevelAlpha.png"
@@ -19,7 +32,7 @@ function Milestones() {
               />
             </div>
 
-            <div className="alpha-container popup">
+            {hovered && <div className={`alpha-container popup ${hovered ? 'visible' : ''}`}>
               <h3>MLSA MILESTONES</h3>
               <div className="alpha-child">
                 <p>
@@ -50,7 +63,7 @@ function Milestones() {
                   .
                 </p>
               </div>
-            </div>
+            </div>}
           </div>
         </div>
 
