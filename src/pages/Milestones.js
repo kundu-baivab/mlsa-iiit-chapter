@@ -54,6 +54,8 @@ function Milestones() {
           </div>
         </div>
 
+        <hr />
+
         <div className="container2">
           <div className="child2">
             <div className="alpha-image-container">
@@ -105,6 +107,8 @@ function Milestones() {
           </div>
         </div>
 
+        <hr />
+
         <div className="container3">
           <div className="child3">
             <div className="beta-image-container">
@@ -141,6 +145,8 @@ function Milestones() {
             </div>
           </div>
         </div>
+
+        <hr />
 
         <div className="container4">
           <div className="child4">
