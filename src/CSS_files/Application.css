@@ -39,13 +39,13 @@
         color: #4b6cb7;
         font-weight: bold;
         margin-top: 5px;
-        margin-left: 12rem;
+        margin-left: 15rem;
 }
 
 @media screen and (max-width: 1020px) {
         .typed-content {
                 font-size: 26px;
-                margin-left: 5rem;
+                margin-left: 30rem;
                 margin-top: 2rem;
         }
 
