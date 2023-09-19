@@ -15,7 +15,7 @@ function Milestones() {
               <div className="alpha-image-container">
                 <img
                   className="alpha-image"
-                  src="./assets/LevelAlpha.png"
+                  src="./assets/LevelNew.png"
                   alt="MLSA Alpha Logo"
                 />
               </div>
