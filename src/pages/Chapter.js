@@ -4,14 +4,17 @@ import Typed from "typed.js";
 import "../CSS_files/Chapter.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Carousel from "../components/Carousel";
+import { VscGithub } from "react-icons/vsc";
+import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 export default function Projects() {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Current MLSA's"],
+      strings: ["OUR MLSA's"],
       typeSpeed: 50,
-      loop: true,
+      loop: false,
       showCursor: false,
     });
 
@@ -19,187 +22,158 @@ export default function Projects() {
       typed.destroy();
     };
   }, []);
+
+  // const CARDS = 10;
+  // const MAX_VISIBILITY = 3;
+
+  const Card = ({title,imageUrl, description}) => (
+    
+    <div className='card'>
+      <img src={imageUrl} alt={title} />
+      <div className="title">
+        <h2>{title}</h2>
+      </div>
+      <p>{description}</p>
+    </div>
+    
+  );
+  const cardsData = [
+    {
+      title: 'Sumit Bhusan Panda',
+      imageUrl: './assets/Sumit.jpeg',
+      description: (
+        <div className="description">
+          <ul>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B421057</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Information Technology</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/SumitPanda03"><VscGithub/> </a>&nbsp;
+              <a href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA=="><FaInstagram/> </a>&nbsp;
+              <a href="https://www.linkedin.com/in/sumit-panda-50ba2b224"><FaLinkedin/>  </a>&nbsp;
+            </div>  
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Card 2',
+      imageUrl: './assets/Sumit.jpeg',
+      description: (
+        <div>
+          <ul>
+            <li><strong>ID:</strong> Your ID</li>
+            <li><strong>Branch:</strong> Your Branch</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub">GitHub Profile</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin">LinkedIn Profile</a></li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/yourinstagram">Instagram Profile</a></li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Card 3',
+      imageUrl: './assets/LevelGold.png',
+      description: (
+        <div>
+          <ul>
+            <li><strong>ID:</strong> Your ID</li>
+            <li><strong>Branch:</strong> Your Branch</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub">GitHub Profile</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin">LinkedIn Profile</a></li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/yourinstagram">Instagram Profile</a></li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Card 4',
+      imageUrl: './assets/LevelGold.png',
+      description: (
+        <div>
+          <ul>
+            <li><strong>ID:</strong> Your ID</li>
+            <li><strong>Branch:</strong> Your Branch</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub">GitHub Profile</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin">LinkedIn Profile</a></li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/yourinstagram">Instagram Profile</a></li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Card 5',
+      imageUrl: './assets/LevelGold.png',
+      description: (
+        <div>
+          <ul>
+            <li><strong>ID:</strong> Your ID</li>
+            <li><strong>Branch:</strong> Your Branch</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub">GitHub Profile</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin">LinkedIn Profile</a></li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/yourinstagram">Instagram Profile</a></li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Card 6',
+      imageUrl: './assets/LevelGold.png',
+      description: (
+        <div>
+          <ul>
+            <li><strong>ID:</strong> Your ID</li>
+            <li><strong>Branch:</strong> Your Branch</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub">GitHub Profile</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin">LinkedIn Profile</a></li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/yourinstagram">Instagram Profile</a></li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Card 7',
+      imageUrl: './assets/LevelGold.png',
+      description: (
+        <div>
+          <ul>
+            <li><strong>ID:</strong> Your ID</li>
+            <li><strong>Branch:</strong> Your Branch</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub">GitHub Profile</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin">LinkedIn Profile</a></li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/yourinstagram">Instagram Profile</a></li>
+          </ul>
+        </div>
+      ),
+    },
+    // Add more objects for additional cards
+  ];
+
   return (
     <div>
       <Navbar />
-      <h1 className="projects my-5 pb-2 font-weight-bold typed-content container">
-        <span ref={el} />
-      </h1>
-      <br />
-      <br />
-      <div className="container1">
-        <div className="row mb-5 mt-5">
-          <div className="col d-flex justify-content-between">
-            <div className="card1">
-              <div className="image1 ml-1">
-                <img src="/assets/pattern.png" alt="" />
-                <div className="content1">
-                  <h5 class="card-title font-weight-bold">patternPrinting</h5>
-                  <p className="card-text">
-                    Java patterns: Solve pattern printing problems for
-                    placements. Essential codes for various pattern types. #Java
-                    #PlacementPreparation
-                  </p>
-                  <a
-                    href="https://github.com/rks-031/patternPrinting.git"
-                    class="btn button-color"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="card1">
-              <div className="image1 ml-1">
-                <img src="/assets/overview.jpg" alt="" />
-                <div className="content1">
-                  <h5 class="card-title font-weight-bold">rks-031</h5>
-                  <p className="card-text">
-                    Personalize your Github overview page with this special
-                    repository. Raw code included for easy customization &
-                    personalization. #Github #CodeSnippet
-                  </p>
-                  <a
-                    href="https://github.com/rks-031/rks-031.git"
-                    class="btn button-color"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr />
-        <br />
-        <div className="row mb-5 mt-5">
-          <div className="col d-flex justify-content-between">
-            <div className="card1">
-              <div className="image1 ml-1">
-                <img src="/assets/weather.jpg" alt="" />
-                <div className="content1">
-                  <h5 class="card-title font-weight-bold">weatherApp</h5>
-                  <p className="card-text">
-                    Real-time weather app. Integrates with OpenWeatherMap API to
-                    provide accurate weather information to users. #NodeJS
-                    #WeatherApp
-                  </p>
-                  <a
-                    href="https://github.com/rks-031/weatherApp.git"
-                    class="btn button-color"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="card1">
-              <div className="image1 ml-1">
-                <img src="/assets/2048.jpg" alt="" />
-                <div className="content1">
-                  <h5 class="card-title font-weight-bold">2048-animated</h5>
-                  <p className="card-text">
-                    A nostalgic and visually appealing ReactJS version of the
-                    classic 2048 game. Engaging gameplay for all ages. #ReactJS
-                    #2048Game #Nostalgia
-                  </p>
-                  <a
-                    href="https://github.com/rks-031/2048-animated.git"
-                    class="btn button-color"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="typed-container">
+        <h1 className="projects my-5 pb-2 font-weight-bold typed-content container">
+          <span ref={el} />
+        </h1>
+      </div>
         <br />
         <br />
-        <br />
-        <div className="row mb-5 mt-5">
-          <div className="col d-flex justify-content-between">
-            <div className="card1">
-              <div className="image1 ml-1">
-                <img src="/assets/text.png" alt="" />
-                <div className="content1">
-                  <h5 class="card-title font-weight-bold">textUtils</h5>
-                  <p className="card-text">
-                    User-friendly website with text manipulation tools.
-                    Word/Character counter,replace, and more.#TextUtils
-                    #TextManipulation #ReactJS
-                  </p>
-                  <a
-                    href="https://github.com/rks-031/textUtils.git"
-                    class="btn button-color"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github Repository
-                  </a>
-                  <br />
-                </div>
-              </div>
-            </div>
-
-            <div className="card1">
-              <div className="image1 ml-1">
-                <img src="/assets/jokes.jpg" alt="" />
-                <div className="content1">
-                  <h5 class="card-title font-weight-bold">jokesGenerator</h5>
-                  <p className="card-text">
-                    Enjoy hilarious jokes with this ReactJS mini app. Dynamic
-                    display of jokes and punchlines with toggle option for
-                    showing/hiding punchlines. #ReactJS #JokeGenerator
-                  </p>
-                  <a
-                    href="https://github.com/rks-031/jokesGenerator.git"
-                    class="btn button-color"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="card1">
-              <div className="image1 ml-1">
-                <img src="/assets/medibox.jpg" alt="" />
-                <div className="content1">
-                  <h5 class="card-title font-weight-bold">mediBOX</h5>
-                  <p className="card-text">
-                    Experience mediBOX, a virtual hospital connecting people to
-                    healthcare. HTML, CSS, JS, ML, Node, MongoDB power this
-                    personalized platform. #mediBOX #VirtualHospital
-                  </p>
-                  <a
-                    href="https://github.com/rks-031/mediBOX.git"
-                    class="btn button-color"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className='app'>
+        <Carousel>
+          {cardsData.map((card, i) => (
+            <Card
+              key={i}
+              title={card.title}
+              imageUrl={card.imageUrl}
+              description={card.description}
+            />
+          ))}
+        </Carousel>
       </div>
       <Footer />
     </div>
   );
 }
+
+
