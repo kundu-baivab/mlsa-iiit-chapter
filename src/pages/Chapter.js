@@ -1,11 +1,11 @@
 import React from "react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import "../CSS_files/Chapter.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Carousel from "../components/Carousel";
-import { VscGithub } from "react-icons/vsc";
+import { VscGithub, VscMail } from "react-icons/vsc";
 import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 export default function Projects() {
@@ -23,24 +23,11 @@ export default function Projects() {
     };
   }, []);
 
-  // const CARDS = 10;
-  // const MAX_VISIBILITY = 3;
-
-  const Card = ({title,imageUrl, description}) => (
-    
-    <div className='card'>
-      <img src={imageUrl} alt={title} />
-      <div className="title">
-        <h2>{title}</h2>
-      </div>
-      <p>{description}</p>
-    </div>
-    
-  );
   const cardsData = [
     {
       title: 'Sumit Bhusan Panda',
-      imageUrl: './assets/Sumit.jpeg',
+      imageUrlFront: './assets/Sumit.jpeg',
+      imageUrlBack: './assets/LevelAlpha.png',
       description: (
         <div className="description">
           <ul>
@@ -51,129 +38,325 @@ export default function Projects() {
               <a href="https://github.com/SumitPanda03"><VscGithub/> </a>&nbsp;
               <a href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA=="><FaInstagram/> </a>&nbsp;
               <a href="https://www.linkedin.com/in/sumit-panda-50ba2b224"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:sbpanda1308@gmail.com"><VscMail/></a>&nbsp;
             </div>  
           </ul>
         </div>
       ),
     },
     {
-      title: 'Card 2',
-      imageUrl: './assets/Sumit.jpeg',
+      title: 'Rajnish Kumar Singh',
+      imageUrlFront: './assets/Rajnish.jpg',
+      imageUrlBack: './assets/LevelAlpha.png',
       description: (
-        <div>
+        <div className="description">
           <ul>
-            <li><strong>ID:</strong> Your ID</li>
-            <li><strong>Branch:</strong> Your Branch</li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub">GitHub Profile</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin">LinkedIn Profile</a></li>
-            <li><strong>Instagram:</strong> <a href="https://instagram.com/yourinstagram">Instagram Profile</a></li>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B421037</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Computer Science</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/rks-031"><VscGithub/> </a>&nbsp;
+              <a href="https://www.instagram.com/rks_031/"><FaInstagram/> </a>&nbsp;
+              <a href=" https://www.linkedin.com/in/rajnish-kumar-singh-2241b321b/"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:b421037@iiit-bh.ac.in"><VscMail/></a>&nbsp;
+            </div>  
           </ul>
         </div>
       ),
     },
     {
-      title: 'Card 3',
-      imageUrl: './assets/LevelGold.png',
+      title: 'Swoyam Siddharth Nayak',
+      imageUrlFront: './assets/Swoyam_Sidharth_B121065.jpeg',
+      imageUrlBack: './assets/LevelBeta.png',
       description: (
-        <div>
+        <div className="description">
           <ul>
-            <li><strong>ID:</strong> Your ID</li>
-            <li><strong>Branch:</strong> Your Branch</li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub">GitHub Profile</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin">LinkedIn Profile</a></li>
-            <li><strong>Instagram:</strong> <a href="https://instagram.com/yourinstagram">Instagram Profile</a></li>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B121065</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Computer Science</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/swoyam2609"><VscGithub/> </a>&nbsp;
+              <a href="https://www.instagram.com/self._._.sid/"><FaInstagram/> </a>&nbsp;
+              <a href="https://www.linkedin.com/in/swoyam2609/"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:b121065@iiit-bh.ac.in"><VscMail/></a>&nbsp;
+            </div>  
           </ul>
         </div>
       ),
     },
     {
-      title: 'Card 4',
-      imageUrl: './assets/LevelGold.png',
+      title: 'Abhipsha Dash',
+      imageUrlFront: './assets/AbhipshaDash.jpg',
+      imageUrlBack: './assets/LevelBeta.png',
       description: (
-        <div>
+        <div className="description">
           <ul>
-            <li><strong>ID:</strong> Your ID</li>
-            <li><strong>Branch:</strong> Your Branch</li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub">GitHub Profile</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin">LinkedIn Profile</a></li>
-            <li><strong>Instagram:</strong> <a href="https://instagram.com/yourinstagram">Instagram Profile</a></li>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B321003</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Electrical and Electronics</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              {/* <a href="https://github.com/SumitPanda03"><VscGithub/> </a>&nbsp; */}
+              {/* <a href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA=="><FaInstagram/> </a>&nbsp; */}
+              <a href="https://www.linkedin.com/in/abhipsha-dash/"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:b321003@iiit-bh.ac.in"><VscMail/></a>&nbsp;
+            </div>  
           </ul>
         </div>
       ),
     },
     {
-      title: 'Card 5',
-      imageUrl: './assets/LevelGold.png',
+      title: 'Ayusha Kar',
+      imageUrlFront: './assets/ayusha.jpeg',
+      imageUrlBack: './assets/LevelBeta.png',
       description: (
-        <div>
+        <div className="description">
           <ul>
-            <li><strong>ID:</strong> Your ID</li>
-            <li><strong>Branch:</strong> Your Branch</li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub">GitHub Profile</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin">LinkedIn Profile</a></li>
-            <li><strong>Instagram:</strong> <a href="https://instagram.com/yourinstagram">Instagram Profile</a></li>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B421057</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Computer Science</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/SumitPanda03"><VscGithub/> </a>&nbsp;
+              <a href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA=="><FaInstagram/> </a>&nbsp;
+              <a href="https://www.linkedin.com/in/sumit-panda-50ba2b224"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:b321003@iiit-bh.ac.in"><VscMail/></a>&nbsp;
+            </div>  
           </ul>
         </div>
       ),
     },
     {
-      title: 'Card 6',
-      imageUrl: './assets/LevelGold.png',
+      title: 'Baivab Kundu',
+      imageUrlFront: './assets/Sumit.jpeg',
+      imageUrlBack: './assets/LevelAlpha.png',
       description: (
-        <div>
+        <div className="description">
           <ul>
-            <li><strong>ID:</strong> Your ID</li>
-            <li><strong>Branch:</strong> Your Branch</li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub">GitHub Profile</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin">LinkedIn Profile</a></li>
-            <li><strong>Instagram:</strong> <a href="https://instagram.com/yourinstagram">Instagram Profile</a></li>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B421017</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Information Technology</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/SumitPanda03"><VscGithub/> </a>&nbsp;
+              <a href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA=="><FaInstagram/> </a>&nbsp;
+              <a href="https://www.linkedin.com/in/sumit-panda-50ba2b224"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:b321003@iiit-bh.ac.in"><VscMail/></a>&nbsp;
+            </div>  
           </ul>
         </div>
       ),
     },
     {
-      title: 'Card 7',
-      imageUrl: './assets/LevelGold.png',
+      title: 'Rohan Mohanty',
+      imageUrlFront: './assets/Sumit.jpeg',
+      imageUrlBack: './assets/LevelBeta.png',
       description: (
-        <div>
+        <div className="description">
           <ul>
-            <li><strong>ID:</strong> Your ID</li>
-            <li><strong>Branch:</strong> Your Branch</li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub">GitHub Profile</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin">LinkedIn Profile</a></li>
-            <li><strong>Instagram:</strong> <a href="https://instagram.com/yourinstagram">Instagram Profile</a></li>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B421057</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Computer Science</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/SumitPanda03"><VscGithub/> </a>&nbsp;
+              <a href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA=="><FaInstagram/> </a>&nbsp;
+              <a href="https://www.linkedin.com/in/sumit-panda-50ba2b224"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:b321003@iiit-bh.ac.in"><VscMail/></a>&nbsp;
+            </div>  
           </ul>
         </div>
       ),
     },
+    {
+      title: 'Roshan Dash',
+      imageUrlFront: './assets/Sumit.jpeg',
+      imageUrlBack: './assets/LevelBeta.png',
+      description: (
+        <div className="description">
+          <ul>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B421057</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Computer Science</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/SumitPanda03"><VscGithub/> </a>&nbsp;
+              <a href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA=="><FaInstagram/> </a>&nbsp;
+              <a href="https://www.linkedin.com/in/sumit-panda-50ba2b224"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:b321003@iiit-bh.ac.in"><VscMail/></a>&nbsp;
+            </div>  
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Shreeya Mishra',
+      imageUrlFront: './assets/Sumit.jpeg',
+      imageUrlBack: './assets/LevelBeta.png',
+      description: (
+        <div className="description">
+          <ul>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B421046</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Computer Science</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/SumitPanda03"><VscGithub/> </a>&nbsp;
+              <a href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA=="><FaInstagram/> </a>&nbsp;
+              <a href="https://www.linkedin.com/in/sumit-panda-50ba2b224"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:b321003@iiit-bh.ac.in"><VscMail/></a>&nbsp;
+            </div>  
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Anirudh Pradhan',
+      imageUrlFront: './assets/Anirudh.jpg',
+      imageUrlBack: './assets/LevelNew.png',
+      description: (
+        <div className="description">
+          <ul>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B421057</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Computer Science</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/AnirudhPradhan"><VscGithub/> </a>&nbsp;
+              <a href="https://www.instagram.com/_.anirudh.roshan._/"><FaInstagram/> </a>&nbsp;
+              <a href="https://www.linkedin.com/in/anirudhpradhan/"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:anipradhan.04@gmail.com"><VscMail/></a>&nbsp;
+            </div>  
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Dasari Sasi Ranga Raidu',
+      imageUrlFront: './assets/Dasari_Sasi_Ranga_Raidu_B322020.jpg',
+      imageUrlBack: './assets/LevelNew.png',
+      description: (
+        <div className="description">
+          <ul>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B421057</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Computer Science</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/sasiidasariii"><VscGithub/> </a>&nbsp;
+              <a href="https://www.instagram.com/sasiidasariii/"><FaInstagram/> </a>&nbsp;
+              <a href="https://www.linkedin.com/in/sasi-ranga-raidu-dasari-26285a253"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:b322020@iiit-bh.ac.in"><VscMail/></a>&nbsp;
+            </div>  
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Mohammad Ehtisham',
+      imageUrlFront: './assets/Mohd_Ehtisham.jpg',
+      imageUrlBack: './assets/LevelNew.png',
+      description: (
+        <div className="description">
+          <ul>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B522035</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Computer Engineering</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/Ehtisham9198"><VscGithub/> </a>&nbsp;
+              <a href="https://instagram.com/ehtisham_119"><FaInstagram/> </a>&nbsp;
+              <a href="https://www.linkedin.com/in/ehtishaam"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:b522035@iiit-bh.ac.in"><VscMail/></a>&nbsp;
+            </div>  
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Punit Kumar',
+      imageUrlFront: './assets/Punit.jpg',
+      imageUrlBack: './assets/LevelNew.png',
+      description: (
+        <div className="description">
+          <ul>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B422041</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Information Technology</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/punitkr03"><VscGithub/> </a>&nbsp;
+              <a href="https://www.instagram.com/punit_k.r"><FaInstagram/> </a>&nbsp;
+              <a href="https://www.linkedin.com/in/punit-kr03"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:b422041@iiit-bh.ac.in"><VscMail/></a>&nbsp;
+            </div>  
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Rajesh Kumar Jena',
+      imageUrlFront: './assets/RajeshKumarJena.jpg',
+      imageUrlBack: './assets/LevelNew.png',
+      description: (
+        <div className="description">
+          <ul>
+            <li><strong className="bold-black">ID:</strong> <span className="list-content">B122088</span></li>
+            <li style={{ marginTop: '10px' }}><strong className="bold-black">Branch:</strong> <span className="list-content">Computer Science</span></li>
+            <div className="social">
+            <li style={{ marginTop: '10px' }}><strong className="bold-black"> Socials : </strong></li>&nbsp;&nbsp;
+              <a href="https://github.com/Rajesh-1234567https://github.com/Rajesh-1234567"><VscGithub/> </a>&nbsp;
+              <a href="https://www.instagram.com/kumar_rajesh_1234567/"><FaInstagram/> </a>&nbsp;
+              <a href="https://www.linkedin.com/in/rajesh-kumar-jena-793257212/"><FaLinkedin/>  </a>&nbsp;
+              <a href="mailto:b122088@iiit-bh.ac.in"><VscMail/></a>&nbsp;
+            </div>  
+          </ul>
+        </div>
+      ),
+    },
+    
     // Add more objects for additional cards
   ];
 
+const Card = ({ title, imageUrlFront, imageUrlBack, description }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
   return (
-    <div>
-      <Navbar />
-      <div className="typed-container">
-        <h1 className="projects my-5 pb-2 font-weight-bold typed-content container">
-          <span ref={el} />
-        </h1>
+    <div
+      className={`card ${isFlipped ? "flipped" : ""}`}
+      onMouseEnter={() => setIsFlipped(true)}
+      onMouseLeave={() => setIsFlipped(false)}
+    >
+      <div className="card-inner">
+        <div className="card-front">
+          <img className="uniform-image" src={imageUrlFront} alt={title} />
+          <div className="title">
+            <h2>{title}</h2>
+          </div>
+        </div>
+        <div className="card-back">
+          <img className="uniform-image" src={imageUrlBack} alt={title} />
+          <div className="description">{description}</div>
+        </div>
       </div>
-        <br />
-        <br />
-        <div className='app'>
-        <Carousel>
-          {cardsData.map((card, i) => (
-            <Card
-              key={i}
-              title={card.title}
-              imageUrl={card.imageUrl}
-              description={card.description}
-            />
-          ))}
-        </Carousel>
-      </div>
-      <Footer />
     </div>
   );
-}
+};
 
+return (
+  <div>
+    <Navbar />
+    <div className="typed-container">
+      <h1 className="typed-content container">
+        <span ref={el} />
+      </h1>
+    </div>
+
+    <div className="app">
+      <Carousel>
+        {cardsData.map((card, i) => (
+          <Card
+            key={i}
+            title={card.title}
+            imageUrlFront={card.imageUrlFront}
+            imageUrlBack={card.imageUrlBack}
+            description={card.description}
+          />
+        ))}
+      </Carousel>
+    </div>
+    <Footer />
+  </div>
+);
+}
 
