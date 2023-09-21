@@ -8,66 +8,67 @@ function Milestones() {
   return (
     <>
       <Navbar />
-      <div className="container">
-        <div className="parent-container ">
-          <div className="container2">
-            <div className="child2">
-              <div className="alpha-image-container">
-                <img
-                  className="alpha-image"
+      <section id="timeline">
+
+        <div className="tl-item">
+        <div
+          className="tl-bg"
+          style={{
+            backgroundImage: "url(https://placeimg.com/801/801/nature)",
+          }}
+        ></div>
+        <div className="tl-image">
+          <img
+                  className="new-image "
                   src="./assets/LevelNew.png"
-                  alt="MLSA Alpha Logo"
-                />
-              </div>
+                  alt="MLSA New Logo"
+          />
+        </div>
+        <div className="tl-content">
+          <h1><strong style={{color: "#cdb4db"}}>MLSA NEW</strong></h1>
+            <p>
+              Student Ambassadors are required to complete various
+              pre-identified activities in order to grow their skills on a
+              well-defined road to success. As you complete these
+              activities, your program milestones are advanced. Additional
+              program benefits are unlocked too. Milestones are advanced
+              in order from{" "}
+              <strong style={{ color: "#4b6cb7" }}>New to Alpha</strong>,{" "}
+              <strong style={{ color: "#4b6cb7" }}>Alpha to Beta</strong>{" "}
+              and{" "}
+              <strong style={{ color: "#4b6cb7" }}>Beta to Gold</strong>.
+              Program certificates are updated with each milestone
+              advancement. Milestones showcase your expertise and let the
+              world know about your achievements. You are encouraged to
+              share your milestone advancements with your{" "}
+              <strong style={{ color: "#4b6cb7" }}>local</strong> and{" "}
+              <strong style={{ color: "#4b6cb7" }}>online</strong>&nbsp;
+              communities.
+            </p>
+        </div>
+      </div>
 
-              <div className="alpha-container">
-                <h3>NEW MLSA</h3>
-                <div className="alpha-child">
-                  <p>
-                    Student Ambassadors are required to complete various
-                    pre-identified activities in order to grow their skills on a
-                    well-defined road to success. As you complete these
-                    activities, your program milestones are advanced. Additional
-                    program benefits are unlocked too. Milestones are advanced
-                    in order from{" "}
-                    <strong style={{ color: "#4b6cb7" }}>New to Alpha</strong>,{" "}
-                    <strong style={{ color: "#4b6cb7" }}>Alpha to Beta</strong>{" "}
-                    and{" "}
-                    <strong style={{ color: "#4b6cb7" }}>Beta to Gold</strong>.
-                    Program certificates are updated with each milestone
-                    advancement. Milestones showcase your expertise and let the
-                    world know about your achievements. You are encouraged to
-                    share your milestone advancements with your{" "}
-                    <strong style={{ color: "#4b6cb7" }}>local</strong> and{" "}
-                    <strong style={{ color: "#4b6cb7" }}>online</strong>&nbsp;
-                    communities.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <div className="container2">
-            <div className="child2">
-              <div className="alpha-image-container">
-                <img
+      <div className="tl-item">
+        <div
+          className="tl-bg"
+          style={{
+            backgroundImage: "url(https://placeimg.com/801/801/nature)",
+          }}
+        ></div>
+        <div className="tl-image">
+          <img
                   className="alpha-image"
                   src="./assets/LevelAlpha.png"
                   alt="MLSA Alpha Logo"
-                />
-              </div>
-
-              <div className="alpha-container">
-                <h3>ALPHA MLSA</h3>
-                <div className="alpha-child">
-                  <p>
-                    Student Ambassadors that complete a learning path on
+          />
+        </div>
+        <div className="tl-content">
+          <h1><strong style={{color: "#cdb4db"}}>MLSA ALPHA</strong></h1>
+          <p>
+          Student Ambassadors that complete a learning path on
                     Microsoft Learn will earn the Alpha badge.
-                  </p>
-                </div>
-                <div className="alpha-perks">
+          </p>
+          <div className="alpha-perks">
                   <ul>
                     <li>
                       <strong style={{ color: "#4b6cb7" }}>
@@ -96,30 +97,32 @@ function Milestones() {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
 
-          <hr />
 
-          <div className="container3">
-            <div className="child3">
-              <div className="beta-image-container">
-                <img
+
+      <div className="tl-item">
+        <div
+          className="tl-bg"
+          style={{
+            backgroundImage: "url(https://placeimg.com/801/801/nature)",
+          }}
+        ></div>
+        <div className="tl-image">
+        <img
                   className="beta-image"
                   src="./assets/LevelBeta.png"
                   alt="MLSA Beta Logo"
                 />
-              </div>
-              <div className="beta-container">
-                <h3>BETA MLSA</h3>
-                <div className="beta-child">
-                  <p>
-                    Student Ambassadors who plan and host an event for other
-                    students in their community will earn the Beta badge.
-                  </p>
-                </div>
-                <div className="beta-perks">
+        </div>
+        <div className="tl-content">
+          <h1><strong style={{color: "#cdb4db"}}>MLSA BETA</strong></h1>
+          <p>
+            Student Ambassadors who plan and host an event for other
+            students in their community will earn the Beta badge.
+          </p>
+          <div className="beta-perks">
                   <ul>
                     <li>
                       <strong style={{ color: "#4b6cb7" }}>
@@ -139,30 +142,30 @@ function Milestones() {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
 
-          <hr />
-
-          <div className="container4">
-            <div className="child4">
-              <div className="gold-image-container">
-                <img
+      <div className="tl-item">
+        <div
+          className="tl-bg"
+          style={{
+            backgroundImage: "url(https://placeimg.com/801/801/nature)",
+          }}
+        ></div>
+        <div className="tl-image">
+        <img
                   className="gold-image"
                   src="./assets/LevelGold.png"
                   alt="MLSA Gold Logo"
                 />
-              </div>
-              <div className="gold-container">
-                <h3>GOLD MLSA</h3>
-                <div className="gold-child">
-                  <p>
-                    Student Ambassadors who have gone above and beyond serving
-                    their local community will be invited to the Gold milestone.
-                  </p>
-                </div>
-                <div className="gold-perks">
+        </div>
+        <div className="tl-content">
+          <h1><strong style={{color: "#cdb4db"}}>MLSA GOLD</strong></h1>
+          <p>
+              Student Ambassadors who have gone above and beyond serving
+              their local community will be invited to the Gold milestone.
+          </p>
+          <div className="gold-perks">
                   <ul>
                     <li>
                       <strong style={{ color: "#4b6cb7" }}>
@@ -191,11 +194,10 @@ function Milestones() {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
+
+    </section>
       <Footer />
     </>
   );
