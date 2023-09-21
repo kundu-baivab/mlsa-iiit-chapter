@@ -38,8 +38,6 @@ function Application() {
           <span ref={el} className="typed-content"></span> {/*JSX CONTENT*/}
           <br />
           <br />
-          <br />
-          <br />
           <button
             type="button"
             className="btn btn-secondary btn-lg btn-block my-3"
