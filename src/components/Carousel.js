@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../CSS_files/Carousel.css';
 
-
 import {TiChevronLeftOutline, TiChevronRightOutline} from 'https://cdn.skypack.dev/react-icons/ti';
 
 const CARDS = 10;
