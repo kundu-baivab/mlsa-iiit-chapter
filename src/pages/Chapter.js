@@ -27,6 +27,220 @@ export default function Projects() {
 
   const cardsData = [
     {
+      title: "Ayusha Kar",
+      imageUrlFront: "./assets/ayusha.jpeg",
+      imageUrlBack: "./assets/LevelBeta.png",
+      description: (
+        <div className="description">
+          <ul>
+            <li>
+              <strong className="bold-black">ID:</strong>{" "}
+              <span className="list-content">B520015</span>
+            </li>
+            <li style={{ marginTop: "10px" }}>
+              <strong className="bold-black">Branch:</strong>{" "}
+              <span className="list-content">Computer Engineering</span>
+            </li>
+            <div className="social">
+              <li style={{ marginTop: "10px" }}>
+                <strong className="bold-black"> Socials : </strong>
+              </li>
+              &nbsp;&nbsp;
+              <a
+                href="https://github.com/ayushakar1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <VscGithub />{" "}
+              </a>
+              &nbsp;
+              <a
+                href="https://www.instagram.com/ayushaakar/
+              "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />{" "}
+              </a>
+              &nbsp;
+              <a
+                href="https://www.linkedin.com/in/ayusha-kar-98b488207/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />{" "}
+              </a>
+              &nbsp;
+              <a
+                href="mailto:b520015@iiit-bh.ac.in
+              "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <VscMail />
+              </a>
+              &nbsp;
+            </div>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: "Abhipsha Dash",
+      imageUrlFront: "./assets/AbhipshaDash.jpg",
+      imageUrlBack: "./assets/LevelBeta.png",
+      description: (
+        <div className="description">
+          <ul>
+            <li>
+              <strong className="bold-black">ID:</strong>{" "}
+              <span className="list-content">B321003</span>
+            </li>
+            <li style={{ marginTop: "10px" }}>
+              <strong className="bold-black">Branch:</strong>{" "}
+              <span className="list-content">Electrical and Electronics</span>
+            </li>
+            <div className="social">
+              <li style={{ marginTop: "10px" }}>
+                <strong className="bold-black"> Socials : </strong>
+              </li>
+              &nbsp;&nbsp;
+              {/* <a href="https://github.com/SumitPanda03"><VscGithub/> </a>&nbsp; */}
+              {/* <a href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA=="><FaInstagram/> </a>&nbsp; */}
+              <a
+                href="https://www.linkedin.com/in/abhipsha-dash/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />{" "}
+              </a>
+              &nbsp;
+              <a
+                href="mailto:b321003@iiit-bh.ac.in"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <VscMail />
+              </a>
+              &nbsp;
+            </div>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: "Shreeya Mishra",
+      imageUrlFront: "./assets/Shreeya.jpg",
+      imageUrlBack: "./assets/LevelBeta.png",
+      description: (
+        <div className="description">
+          <ul>
+            <li>
+              <strong className="bold-black">ID:</strong>{" "}
+              <span className="list-content">B421046</span>
+            </li>
+            <li style={{ marginTop: "10px" }}>
+              <strong className="bold-black">Branch:</strong>{" "}
+              <span className="list-content">Information Technology</span>
+            </li>
+            <div className="social">
+              <li style={{ marginTop: "10px" }}>
+                <strong className="bold-black"> Socials : </strong>
+              </li>
+              &nbsp;&nbsp;
+              <a
+                href="https://github.com/mshreeya
+              "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <VscGithub />{" "}
+              </a>
+              &nbsp;
+              {/*<a href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA==">
+                <FaInstagram />{" "}
+      </a>*/}
+              &nbsp;
+              <a
+                href="https://www.linkedin.com/in/mishrashreeya/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />{" "}
+              </a>
+              &nbsp;
+              <a
+                href="mailto:b421046@iiit-bh.ac.in"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <VscMail />
+              </a>
+              &nbsp;
+            </div>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: "Roshan Dash",
+      imageUrlFront: "./assets/Roshan.jpg",
+      imageUrlBack: "./assets/LevelBeta.png",
+      description: (
+        <div className="description">
+          <ul>
+            <li>
+              <strong className="bold-black">ID:</strong>{" "}
+              <span className="list-content">B121046</span>
+            </li>
+            <li style={{ marginTop: "10px" }}>
+              <strong className="bold-black">Branch:</strong>{" "}
+              <span className="list-content">Computer Science</span>
+            </li>
+            <div className="social">
+              <li style={{ marginTop: "10px" }}>
+                <strong className="bold-black"> Socials : </strong>
+              </li>
+              &nbsp;&nbsp;
+              <a
+                href="https://github.com/dashroshan"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <VscGithub />{" "}
+              </a>
+              &nbsp;
+              <a
+                href="https://twitter.com/roshandashx
+              "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter />{" "}
+              </a>
+              &nbsp;
+              <a
+                href="https://www.linkedin.com/in/roshandash"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />{" "}
+              </a>
+              &nbsp;
+              <a
+                href="mailto:b121046@iiit-bh.ac.in"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <VscMail />
+              </a>
+              &nbsp;
+            </div>
+          </ul>
+        </div>
+      ),
+    },
+    {
       title: "Sumit Bhusan Panda",
       imageUrlFront: "./assets/Sumit.jpeg",
       imageUrlBack: "./assets/LevelAlpha.png",
@@ -198,108 +412,6 @@ export default function Projects() {
       ),
     },
     {
-      title: "Abhipsha Dash",
-      imageUrlFront: "./assets/AbhipshaDash.jpg",
-      imageUrlBack: "./assets/LevelBeta.png",
-      description: (
-        <div className="description">
-          <ul>
-            <li>
-              <strong className="bold-black">ID:</strong>{" "}
-              <span className="list-content">B321003</span>
-            </li>
-            <li style={{ marginTop: "10px" }}>
-              <strong className="bold-black">Branch:</strong>{" "}
-              <span className="list-content">Electrical and Electronics</span>
-            </li>
-            <div className="social">
-              <li style={{ marginTop: "10px" }}>
-                <strong className="bold-black"> Socials : </strong>
-              </li>
-              &nbsp;&nbsp;
-              {/* <a href="https://github.com/SumitPanda03"><VscGithub/> </a>&nbsp; */}
-              {/* <a href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA=="><FaInstagram/> </a>&nbsp; */}
-              <a
-                href="https://www.linkedin.com/in/abhipsha-dash/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin />{" "}
-              </a>
-              &nbsp;
-              <a
-                href="mailto:b321003@iiit-bh.ac.in"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <VscMail />
-              </a>
-              &nbsp;
-            </div>
-          </ul>
-        </div>
-      ),
-    },
-    {
-      title: "Ayusha Kar",
-      imageUrlFront: "./assets/ayusha.jpeg",
-      imageUrlBack: "./assets/LevelBeta.png",
-      description: (
-        <div className="description">
-          <ul>
-            <li>
-              <strong className="bold-black">ID:</strong>{" "}
-              <span className="list-content">B520015</span>
-            </li>
-            <li style={{ marginTop: "10px" }}>
-              <strong className="bold-black">Branch:</strong>{" "}
-              <span className="list-content">Computer Engineering</span>
-            </li>
-            <div className="social">
-              <li style={{ marginTop: "10px" }}>
-                <strong className="bold-black"> Socials : </strong>
-              </li>
-              &nbsp;&nbsp;
-              <a
-                href="https://github.com/ayushakar1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <VscGithub />{" "}
-              </a>
-              &nbsp;
-              <a
-                href="https://www.instagram.com/ayushaakar/
-              "
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram />{" "}
-              </a>
-              &nbsp;
-              <a
-                href="https://www.linkedin.com/in/ayusha-kar-98b488207/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin />{" "}
-              </a>
-              &nbsp;
-              <a
-                href="mailto:b520015@iiit-bh.ac.in
-              "
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <VscMail />
-              </a>
-              &nbsp;
-            </div>
-          </ul>
-        </div>
-      ),
-    },
-    {
       title: "Baivab Kundu",
       imageUrlFront: "./assets/baivab.jpg",
       imageUrlBack: "./assets/LevelAlpha.png",
@@ -405,118 +517,6 @@ export default function Projects() {
               <a
                 href="mailto:b121045@iiit-bh.ac.in
                 "
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <VscMail />
-              </a>
-              &nbsp;
-            </div>
-          </ul>
-        </div>
-      ),
-    },
-    {
-      title: "Roshan Dash",
-      imageUrlFront: "./assets/Roshan.jpg",
-      imageUrlBack: "./assets/LevelBeta.png",
-      description: (
-        <div className="description">
-          <ul>
-            <li>
-              <strong className="bold-black">ID:</strong>{" "}
-              <span className="list-content">B121046</span>
-            </li>
-            <li style={{ marginTop: "10px" }}>
-              <strong className="bold-black">Branch:</strong>{" "}
-              <span className="list-content">Computer Science</span>
-            </li>
-            <div className="social">
-              <li style={{ marginTop: "10px" }}>
-                <strong className="bold-black"> Socials : </strong>
-              </li>
-              &nbsp;&nbsp;
-              <a
-                href="https://github.com/dashroshan"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <VscGithub />{" "}
-              </a>
-              &nbsp;
-              <a
-                href="https://twitter.com/roshandashx
-              "
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaTwitter />{" "}
-              </a>
-              &nbsp;
-              <a
-                href="https://www.linkedin.com/in/roshandash"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin />{" "}
-              </a>
-              &nbsp;
-              <a
-                href="mailto:b121046@iiit-bh.ac.in"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <VscMail />
-              </a>
-              &nbsp;
-            </div>
-          </ul>
-        </div>
-      ),
-    },
-    {
-      title: "Shreeya Mishra",
-      imageUrlFront: "./assets/Shreeya.jpg",
-      imageUrlBack: "./assets/LevelBeta.png",
-      description: (
-        <div className="description">
-          <ul>
-            <li>
-              <strong className="bold-black">ID:</strong>{" "}
-              <span className="list-content">B421046</span>
-            </li>
-            <li style={{ marginTop: "10px" }}>
-              <strong className="bold-black">Branch:</strong>{" "}
-              <span className="list-content">Information Technology</span>
-            </li>
-            <div className="social">
-              <li style={{ marginTop: "10px" }}>
-                <strong className="bold-black"> Socials : </strong>
-              </li>
-              &nbsp;&nbsp;
-              <a
-                href="https://github.com/mshreeya
-              "
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <VscGithub />{" "}
-              </a>
-              &nbsp;
-              {/*<a href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA==">
-                <FaInstagram />{" "}
-      </a>*/}
-              &nbsp;
-              <a
-                href="https://www.linkedin.com/in/mishrashreeya/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin />{" "}
-              </a>
-              &nbsp;
-              <a
-                href="mailto:b421046@iiit-bh.ac.in"
                 target="_blank"
                 rel="noopener noreferrer"
               >
