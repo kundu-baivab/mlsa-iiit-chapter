@@ -1,4 +1,5 @@
 import React from "react";
+import "../CSS_files/Zero.css";
 
 function Zero() {
   const containerStyle = {
@@ -12,26 +13,26 @@ function Zero() {
 
   const gifStyle = {
     position: "absolute",
-    top: "10px",
-    right: "10px",
-    width: "150px",
-    height: "150px",
+    top: "2%",
+    right: "2%",
+    width: "15%",
+    maxWidth: "150px",
   };
 
   const logoStyle = {
     position: "absolute",
-    bottom: "15px",
-    right: "15px",
-    width: "80px",
-    height: "80px",
+    bottom: "2%",
+    right: "2%",
+    width: "8%",
+    maxWidth: "80px",
   };
 
   const btnStyle = {
     position: "absolute",
-    bottom: "20px",
-    left: "15px",
-    width: "190px",
-    height: "57.3px",
+    bottom: "3%",
+    left: "2%",
+    width: "30%",
+    maxWidth: "190px",
   };
 
   return (
