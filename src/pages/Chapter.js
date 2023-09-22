@@ -14,8 +14,8 @@ export default function Projects() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ["OUR MLSA's"],
-      typeSpeed: 50,
-      loop: false,
+      typeSpeed: 70,
+      loop: true,
       showCursor: false,
     });
 
@@ -827,7 +827,7 @@ export default function Projects() {
         <div className="card-inner">
           <div className="card-front">
             <img className="uniform-image" src={imageUrlFront} alt={title} />
-            <div className="title">
+            <div className="title" style={{ fontFamily: "Roboto" }}>
               <h2>{title}</h2>
             </div>
           </div>
@@ -848,7 +848,7 @@ export default function Projects() {
           <span ref={el} />
         </h1>
       </div>
-
+      <br />
       <div className="app">
         <Carousel>
           {cardsData.map((card, i) => (
