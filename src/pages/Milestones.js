@@ -24,7 +24,7 @@ function Milestones() {
             />
           </div>
           <div className="tl-content">
-            <h1>MLSA NEW</h1>
+            <h1>NEW MLSA </h1>
             <p>
               Student Ambassadors are required to complete various
               pre-identified activities in order to grow their skills on a
@@ -55,7 +55,7 @@ function Milestones() {
             />
           </div>
           <div className="tl-content">
-            <h1>MLSA ALPHA</h1>
+            <h1>ALPHA MLSA</h1>
             <p>
               Student Ambassadors that complete a learning path on Microsoft
               Learn will earn the Alpha badge.
@@ -87,7 +87,7 @@ function Milestones() {
             />
           </div>
           <div className="tl-content">
-            <h1>MLSA BETA</h1>
+            <h1>BETA MLSA</h1>
             <p>
               Student Ambassadors who plan and host an event for other students
               in their community will earn the Beta badge.
@@ -118,7 +118,7 @@ function Milestones() {
             />
           </div>
           <div className="tl-content">
-            <h1>MLSA GOLD</h1>
+            <h1>GOLD MLSA</h1>
             <p>
               Student Ambassadors who have gone above and beyond serving their
               local community will be invited to the Gold milestone.
