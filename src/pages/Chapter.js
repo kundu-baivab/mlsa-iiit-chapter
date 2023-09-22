@@ -413,7 +413,7 @@ export default function Projects() {
     },
     {
       title: "Baivab Kundu",
-      imageUrlFront: "./assets/baivab.jpg",
+      imageUrlFront: "./assets/Baivab.jpg",
       imageUrlBack: "./assets/LevelAlpha.png",
       description: (
         <div className="description">
