@@ -24,25 +24,18 @@ function Milestones() {
             />
           </div>
           <div className="tl-content">
-            <h1>
-              <strong style={{ color: "#cdb4db" }}>MLSA NEW</strong>
-            </h1>
+            <h1>MLSA NEW</h1>
             <p>
               Student Ambassadors are required to complete various
               pre-identified activities in order to grow their skills on a
               well-defined road to success. As you complete these activities,
               your program milestones are advanced. Additional program benefits
-              are unlocked too. Milestones are advanced in order from{" "}
-              <strong style={{ color: "#4b6cb7" }}>New to Alpha</strong>,{" "}
-              <strong style={{ color: "#4b6cb7" }}>Alpha to Beta</strong> and{" "}
-              <strong style={{ color: "#4b6cb7" }}>Beta to Gold</strong>.
-              Program certificates are updated with each milestone advancement.
-              Milestones showcase your expertise and let the world know about
-              your achievements. You are encouraged to share your milestone
-              advancements with your{" "}
-              <strong style={{ color: "#4b6cb7" }}>local</strong> and{" "}
-              <strong style={{ color: "#4b6cb7" }}>online</strong>&nbsp;
-              communities.
+              are unlocked too. Milestones are advanced in order from New to
+              Alpha, Alpha to Beta and Beta to Gold. Program certificates are
+              updated with each milestone advancement. Milestones showcase your
+              expertise and let the world know about your achievements. You are
+              encouraged to share your milestone advancements with your local
+              and online&nbsp; communities.
             </p>
           </div>
         </div>
@@ -62,40 +55,18 @@ function Milestones() {
             />
           </div>
           <div className="tl-content">
-            <h1>
-              <strong style={{ color: "#cdb4db" }}>MLSA ALPHA</strong>
-            </h1>
+            <h1>MLSA ALPHA</h1>
             <p>
               Student Ambassadors that complete a learning path on Microsoft
               Learn will earn the Alpha badge.
             </p>
             <div className="alpha-perks">
               <ul>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>
-                    150$ monthly Azure credits
-                  </strong>
-                </li>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>
-                    Visual Studio Enterprise subscription
-                  </strong>
-                </li>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>
-                    StudentAmbassadors.com email address
-                  </strong>
-                </li>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>
-                    Event workshop kits
-                  </strong>
-                </li>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>
-                    Incentives for event attendees
-                  </strong>
-                </li>
+                <li>150$ monthly Azure credits</li>
+                <li>Visual Studio Enterprise subscription</li>
+                <li>StudentAmbassadors.com email address</li>
+                <li>Event workshop kits</li>
+                <li>Incentives for event attendees</li>
               </ul>
             </div>
           </div>
@@ -116,27 +87,17 @@ function Milestones() {
             />
           </div>
           <div className="tl-content">
-            <h1>
-              <strong style={{ color: "#cdb4db" }}>MLSA BETA</strong>
-            </h1>
+            <h1>MLSA BETA</h1>
             <p>
               Student Ambassadors who plan and host an event for other students
               in their community will earn the Beta badge.
             </p>
             <div className="beta-perks">
               <ul>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>Alpha benefits</strong>
-                </li>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>Swag</strong>
-                </li>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>Event support</strong>
-                </li>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>Mentorship</strong>
-                </li>
+                <li>Alpha benefits</li>
+                <li>Swag</li>
+                <li>Event support</li>
+                <li>Mentorship</li>
               </ul>
             </div>
           </div>
@@ -157,40 +118,18 @@ function Milestones() {
             />
           </div>
           <div className="tl-content">
-            <h1>
-              <strong style={{ color: "#cdb4db" }}>MLSA GOLD</strong>
-            </h1>
+            <h1>MLSA GOLD</h1>
             <p>
               Student Ambassadors who have gone above and beyond serving their
               local community will be invited to the Gold milestone.
             </p>
             <div className="gold-perks">
               <ul>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>
-                    Alpha and Beta benefits
-                  </strong>
-                </li>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>
-                    Program leadership opportunities
-                  </strong>
-                </li>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>
-                    Microsoft Most Valuable Professional (MVP) mentorship
-                  </strong>
-                </li>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>
-                    May be invited to the MVP program
-                  </strong>
-                </li>
-                <li>
-                  <strong style={{ color: "#4b6cb7" }}>
-                    Exclusive Gold swag
-                  </strong>
-                </li>
+                <li>Alpha and Beta benefits</li>
+                <li>Program leadership opportunities</li>
+                <li>Microsoft Most Valuable Professional (MVP) mentorship</li>
+                <li>May be invited to the MVP program</li>
+                <li>Exclusive Gold swag</li>
               </ul>
             </div>
           </div>
