@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import "../CSS_files/Chapter.css";
+import "../CSS_files/Carousel.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Carousel from "../components/Carousel";
@@ -357,14 +358,14 @@ export default function Projects() {
     },
     {
       title: "Rohan Mohanty",
-      imageUrlFront: "./assets/Sumit.jpeg",
+      imageUrlFront: "./assets/Rohan Mohanty.jpeg",
       imageUrlBack: "./assets/LevelBeta.png",
       description: (
         <div className="description">
           <ul>
             <li>
               <strong className="bold-black">ID:</strong>{" "}
-              <span className="list-content">B421057</span>
+              <span className="list-content">B121045</span>
             </li>
             <li style={{ marginTop: "10px" }}>
               <strong className="bold-black">Branch:</strong>{" "}
@@ -376,7 +377,8 @@ export default function Projects() {
               </li>
               &nbsp;&nbsp;
               <a
-                href="https://github.com/SumitPanda03"
+                href=" https://github.com/mohantyrohan3
+                "
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -384,7 +386,7 @@ export default function Projects() {
               </a>
               &nbsp;
               <a
-                href="https://instagram.com/_sumit_panda_?igshid=OGQ5ZDc2ODk2ZA=="
+                href="https://www.instagram.com/mohantyrohan3/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -392,7 +394,8 @@ export default function Projects() {
               </a>
               &nbsp;
               <a
-                href="https://www.linkedin.com/in/sumit-panda-50ba2b224"
+                href="https://www.linkedin.com/in/rohan-mohanty-325927202/
+                "
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -400,7 +403,8 @@ export default function Projects() {
               </a>
               &nbsp;
               <a
-                href="mailto:b321003@iiit-bh.ac.in"
+                href="mailto:b121045@iiit-bh.ac.in
+                "
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -811,8 +815,6 @@ export default function Projects() {
         </div>
       ),
     },
-
-    // Add more objects for additional cards
   ];
 
   const Card = ({ title, imageUrlFront, imageUrlBack, description }) => {
@@ -827,7 +829,10 @@ export default function Projects() {
         <div className="card-inner">
           <div className="card-front">
             <img className="uniform-image" src={imageUrlFront} alt={title} />
-            <div className="title" style={{ fontFamily: "Roboto" }}>
+            <div
+              className="title"
+              style={{ fontFamily: "'Roboto', sans-serif" }}
+            >
               <h2>{title}</h2>
             </div>
           </div>
@@ -843,11 +848,11 @@ export default function Projects() {
   return (
     <div>
       <Navbar />
-      <div className="typed-container">
-        <h1 className="typed-content container">
-          <span ref={el} />
-        </h1>
-      </div>
+      <h1 className="typed-content container my-5">
+        <span ref={el} />
+      </h1>
+      <br />
+      <br />
       <br />
       <div className="app">
         <Carousel>
