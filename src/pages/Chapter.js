@@ -829,16 +829,13 @@ export default function Projects() {
         <div className="card-inner">
           <div className="card-front">
             <img className="uniform-image" src={imageUrlFront} alt={title} />
-            <div
-              className="title"
-              style={{ fontFamily: "'Roboto', sans-serif" }}
-            >
+            <div className="title">
               <h2>{title}</h2>
             </div>
           </div>
           <div className="card-back">
             <img className="uniform-image" src={imageUrlBack} alt={title} />
-            <div className="description">{description}</div>
+            {description}
           </div>
         </div>
       </div>
@@ -851,8 +848,6 @@ export default function Projects() {
       <h1 className="typed-content container my-5">
         <span ref={el} />
       </h1>
-      <br />
-      <br />
       <br />
       <div className="app">
         <Carousel>
