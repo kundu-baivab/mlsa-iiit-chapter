@@ -20,9 +20,9 @@ function Milestones() {
                 />
               </div>
 
-              <div className="intro-container">
+              <div className="alpha-container">
                 <h3>NEW MLSA</h3>
-                <div className="intro-child">
+                <div className="alpha-child">
                   <p>
                     Student Ambassadors are required to complete various
                     pre-identified activities in order to grow their skills on a
@@ -46,7 +46,7 @@ function Milestones() {
               </div>
             </div>
           </div>
-
+          <hr />
           <div className="container2">
             <div className="child2">
               <div className="alpha-image-container">
@@ -99,6 +99,8 @@ function Milestones() {
             </div>
           </div>
 
+          <hr />
+
           <div className="container3">
             <div className="child3">
               <div className="beta-image-container">
@@ -145,6 +147,8 @@ function Milestones() {
               </div>
             </div>
           </div>
+
+          <hr />
 
           <div className="container4">
             <div className="child4">

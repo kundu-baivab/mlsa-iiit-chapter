@@ -29,7 +29,8 @@
   border: 3px dashed #000;
   border-radius: 30px;
   background-color: #f2f2f2;
-  transition: transform 0.3s ease-in-out;
+  /* transition: transform 0.3s ease-in-out; */
+  box-shadow: 0 4px 8px rgba(5, 20, 55, 0.1), 0 0 4px rgba(5, 20, 55, 0.1);
 }
 
 .alpha-container h3,
@@ -72,13 +73,6 @@
 .gold-perks ul li {
   margin-bottom: 5px;
 }
-
-.alpha-container,
-.beta-container,
-.gold-container {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 
 @keyframes popup {
   0% {
@@ -197,4 +191,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+hr {
+  background-color: #4b6cb7;
 }
