@@ -1,44 +1,49 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "../CSS_files/Zero.css";
-import Lottie from "lottie-react";
-import robot from "../images/robot.json";
-import { Link } from "react-router-dom";
-import Typed from "typed.js";
 
 function Zero() {
-  const typedRef = useRef(null);
-  useEffect(() => {
-    const options = {
-      strings: ["MLSA @ IIIT BBSR"],
-      typeSpeed: 70,
-      showCursor: false,
-      loop: true,
-    };
+  const containerStyle = {
+    backgroundImage: 'url("./assets/mlsa_bg.png")',
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    minHeight: "100vh",
+    position: "relative",
+  };
 
-    typedRef.current = new Typed("#typed-text", options);
-    return () => {
-      if (typedRef.current) {
-        typedRef.current.destroy();
-      }
-    };
-  }, []);
+  const gifStyle = {
+    position: "absolute",
+    top: "2%",
+    right: "2%",
+    width: "15%",
+    maxWidth: "150px",
+  };
+
+  const logoStyle = {
+    position: "absolute",
+    bottom: "2%",
+    right: "2%",
+    width: "8%",
+    maxWidth: "80px",
+  };
+
+  const btnStyle = {
+    position: "absolute",
+    bottom: "3%",
+    left: "2%",
+    width: "30%",
+    maxWidth: "190px",
+  };
 
   return (
-    <>
-      <div id="typed-text"></div> {/* Typed text at the top */}
-      <div className="container1">
-        <div className="centered-content">
-          <Lottie animationData={robot} alt="..." className="robot-animation" />
-        </div>
-        <div>
-          <Link to="/home">
-            <button className="button-29" role="button">
-              Let's Begin!
-            </button>
-          </Link>
-        </div>
+    <div>
+      <div style={containerStyle}>
+        <a href="/home">
+          <img src="./assets/btnLetsBegin.png" alt="Button" style={btnStyle} />
+        </a>
+        <img src="./assets/iiit_logo.png" alt="Logo" style={logoStyle} />
       </div>
-    </>
+    </div>
   );
 }
 

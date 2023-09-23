@@ -10,7 +10,7 @@ function Title() {
   return (
     <div>
       <Navbar />
-      <div className="home-container ">
+      <div className="home-container container">
         <div className="text-center">
           <img
             src="/assets/iiit_logo.png"
@@ -27,7 +27,6 @@ function Title() {
             alt="badge"
           />
         </div>
-        <br />
         <div className="animation">
           <div className="animation-left">
             <Lottie animationData={ms1} alt="..." />
@@ -73,9 +72,9 @@ function Title() {
           <br />
           <br />
           <br />
-          <Footer />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,129 +1,127 @@
-#typed-text {
-        text-align: center;
-        font-size: 70px;
-        color: #4b6cb7;
-        font-weight: bold;
-        margin-top: 5rem;
-        margin-left: 3.5rem;
-}
+@media (max-width: 916px) and (max-height: 523px) {
+        .gif-style {
+                width: 10%;
+                max-width: 100px;
+        }
 
-@media screen and (max-width: 1020px) {
-        #typed-text {
-                font-size: 60px;
-                margin-left: 2rem;
+        .logo-style {
+                width: 6%;
+                max-width: 60px;
+        }
+
+        .btn-style {
+                width: 25%;
+                max-width: 150px;
         }
 }
 
-/* Media query for screens with a maximum width of 900px */
-@media screen and (max-width: 900px) {
-        #typed-text {
-                font-size: 50px;
-                margin-left: 1rem;
+
+
+/* For 768px width */
+@media (max-width: 768px) {
+        .gif-style {
+                width: 12%;
+                max-width: 100px;
+        }
+
+        .logo-style {
+                width: 7%;
+                max-width: 60px;
+        }
+
+        .btn-style {
+                width: 28%;
+                max-width: 150px;
         }
 }
 
-/* Media query for screens with a maximum width of 768px */
-@media screen and (max-width: 768px) {
-        #typed-text {
-                font-size: 40px;
-                margin-top: 3rem;
-                margin-left: 0.5rem;
+/* For 620px width */
+@media (max-width: 620px) {
+        .gif-style {
+                width: 15%;
+                max-width: 80px;
+        }
+
+        .logo-style {
+                width: 8%;
+                max-width: 50px;
+        }
+
+        .btn-style {
+                width: 32%;
+                max-width: 120px;
         }
 }
 
-/* Media query for screens with a maximum width of 600px */
-@media screen and (max-width: 600px) {
-        #typed-text {
-                font-size: 35px;
-                margin-top: 2rem;
-                margin-left: 0.5rem;
+/* For 560px width */
+@media (max-width: 560px) {
+        .gif-style {
+                width: 18%;
+                max-width: 60px;
+        }
+
+        .logo-style {
+                width: 10%;
+                max-width: 40px;
+        }
+
+        .btn-style {
+                width: 35%;
+                max-width: 100px;
         }
 }
 
-/* Media query for screens with a maximum width of 420px */
-@media screen and (max-width: 420px) {
-        #typed-text {
-                font-size: 30px;
-                margin-top: 1.5rem;
-                margin-left: 0.2rem;
+/* For 420px width */
+@media (max-width: 420px) {
+        .gif-style {
+                width: 22%;
+                max-width: 50px;
+        }
+
+        .logo-style {
+                width: 12%;
+                max-width: 30px;
+        }
+
+        .btn-style {
+                width: 40%;
+                max-width: 80px;
         }
 }
 
-/* Media query for screens with a maximum width of 360px */
-@media screen and (max-width: 360px) {
-        #typed-text {
-                font-size: 25px;
-                margin-top: 1rem;
-                margin-left: 0.1rem;
+/* For 360px width */
+@media (max-width: 360px) {
+        .gif-style {
+                width: 25%;
+                max-width: 40px;
+        }
+
+        .logo-style {
+                width: 15%;
+                max-width: 25px;
+        }
+
+        .btn-style {
+                width: 45%;
+                max-width: 60px;
         }
 }
 
-/* Media query for screens with a maximum width of 256px */
-@media screen and (max-width: 256px) {
-        #typed-text {
-                font-size: 20px;
-                margin-top: 0.5rem;
-                margin-left: 0.1rem;
+
+/* For 1487px width */
+@media (max-width: 1487px) and (max-height: 523px) {
+        .gif-style {
+                width: 8%;
+                max-width: 150px;
         }
-}
 
-.container1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80vh;
-}
+        .logo-style {
+                width: 5%;
+                max-width: 80px;
+        }
 
-.centered-content {
-        text-align: center;
-}
-
-.robot-animation {
-        width: 90%;
-        max-width: 400px;
-}
-
-.button-29 {
-        align-items: center;
-        appearance: none;
-        background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-        border: 0;
-        border-radius: 6px;
-        box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-flex;
-        font-family: "JetBrains Mono", monospace;
-        height: 48px;
-        justify-content: center;
-        line-height: 1;
-        list-style: none;
-        overflow: hidden;
-        padding-left: 16px;
-        padding-right: 16px;
-        position: relative;
-        text-align: left;
-        text-decoration: none;
-        transition: box-shadow .15s, transform .15s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        white-space: nowrap;
-        will-change: box-shadow, transform;
-        font-size: 18px;
-}
-
-.button-29:focus {
-        box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-}
-
-.button-29:hover {
-        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-        transform: translateY(-2px);
-}
-
-.button-29:active {
-        box-shadow: #3c4fe0 0 3px 7px inset;
-        transform: translateY(2px);
-}
+        .btn-style {
+                width: 20%;
+                max-width: 200px;
+        }
+}       

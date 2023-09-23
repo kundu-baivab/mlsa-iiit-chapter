@@ -1,7 +1,3 @@
-.body {
-        background-color: blue;
-}
-
 .text-center {
         text-align: center;
         margin-top: 20px;
@@ -34,7 +30,6 @@
         padding: 10px;
         border: 2px solid #0078D4;
         animation: slide 1s ease-in-out;
-        /* Use the defined animation */
 }
 
 .animation-container {
@@ -76,6 +71,6 @@
 
 .badge-logo {
         margin-top: 10px;
-        width: 170px;
-        height: 170px;
+        width: 150px;
+        height: 135px;
 }

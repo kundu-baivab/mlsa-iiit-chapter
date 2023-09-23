@@ -12,18 +12,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div>
-      <div className="container">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Zero />} />
-            <Route path="/home" element={<Title />} />
-            <Route path="/application" element={<Application />} />
-            <Route path="/milestones" element={<Milestones />} />
-            <Route path="/chapter" element={<Chapter />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
-
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Zero />} />
+          <Route path="/home" element={<Title />} />
+          <Route path="/application" element={<Application />} />
+          <Route path="/milestones" element={<Milestones />} />
+          <Route path="/chapter" element={<Chapter />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

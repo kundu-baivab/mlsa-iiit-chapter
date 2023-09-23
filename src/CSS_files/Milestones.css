@@ -29,7 +29,8 @@
   border: 3px dashed #000;
   border-radius: 30px;
   background-color: #f2f2f2;
-  transition: transform 0.3s ease-in-out;
+  /* transition: transform 0.3s ease-in-out; */
+  box-shadow: 0 4px 8px rgba(5, 20, 55, 0.1), 0 0 4px rgba(5, 20, 55, 0.1);
 }
 
 .alpha-container h3,
@@ -73,50 +74,84 @@
   margin-bottom: 5px;
 }
 
-.alpha-container, .beta-container, .gold-container {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
 @keyframes popup {
-  0% {transform: scale(1);}
+  0% {
+    transform: scale(1);
+  }
+
   /* 50% {transform: scale(1.1);} */
-  100% {transform: scale(1.1);}
+  100% {
+    transform: scale(1.1);
+  }
 
 }
-.intro-container:hover{
-  animation: popup 1s ease-in-out forwards;
-  transform: scale(1.1);
-}
-.intro-container:not(:hover){
-  transform: scale(1);
-}
-.alpha-container:hover{
-  animation: popup 1s ease-in-out forwards;
-  transform: scale(1.1);
-}
-.alpha-container:not(:hover){
-  transform: scale(1);
-}
-.beta-container:hover{
-  animation: popup 1s ease-in-out forwards;
-  transform: scale(1.1);
-}
-.beta-container:not(:hover){
-  transform: scale(1);
-}
-.gold-container:hover{
-  animation: popup 1s ease-in-out forwards;
-  transform: scale(1.1);
-}
-.gold-container:not(:hover){
-  transform: scale(1);
-} 
 
-.new-image,.alpha-image,.beta-image,.gold-image{
-  width: 350px; 
+/* .intro-container:hover {
+  animation: popup 1s ease-in-out forwards;
+  transform: scale(1.1);
 }
-.new-image-container{
+
+.intro-container:not(:hover) {
+  transform: scale(1);
+}
+
+.alpha-container:hover {
+  animation: popup 1s ease-in-out forwards;
+  transform: scale(1.1);
+}
+
+.alpha-container:not(:hover) {
+  transform: scale(1);
+}
+
+.beta-container:hover {
+  animation: popup 1s ease-in-out forwards;
+  transform: scale(1.1);
+}
+
+.beta-container:not(:hover) {
+  transform: scale(1);
+}
+
+.gold-container:hover {
+  animation: popup 1s ease-in-out forwards;
+  transform: scale(1.1);
+}
+
+.gold-container:not(:hover) {
+  transform: scale(1);
+} */
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.new-image,
+.alpha-image,
+.beta-image,
+.gold-image {
+  animation: heartbeat 3s infinite;
+}
+
+
+.new-image,
+.alpha-image,
+.beta-image,
+.gold-image {
+  width: 350px;
+}
+
+.new-image-container {
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -124,7 +159,7 @@
   align-items: center;
 }
 
-.alpha-image-container{
+.alpha-image-container {
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -132,7 +167,7 @@
   align-items: center;
 }
 
-.beta-image-container{
+.beta-image-container {
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -140,7 +175,7 @@
   align-items: center;
 }
 
-.gold-image-container{
+.gold-image-container {
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -149,8 +184,16 @@
 }
 
 
-.child1,.child2,.child3,.child4{
+.child1,
+.child2,
+.child3,
+.child4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+hr {
+  background-color: #4b6cb7;
 }
