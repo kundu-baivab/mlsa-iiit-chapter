@@ -3,6 +3,8 @@ const authController = require("../controllers/authController");
 
 const router = Router();
 
+router.get("/",authController.opening_get);
+router.post("/",authController.opening_post);
 router.get("/adminsignup", authController.signup_get);
 router.post("/adminsignup", authController.signup_post);
 router.get("/adminlogin", authController.login_get);

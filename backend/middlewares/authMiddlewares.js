@@ -1,6 +1,19 @@
 const jwt = require("jsonwebtoken");
 const User = require("../models/users");
 
+const reqAccess=(req,res,next)=>{
+  const tok=req.cookies.access;
+  if(tok){
+    jwt.verify(tok,"sec key",(err,decodedToken)=>{
+      if(err){
+        console.log(err)
+        res.redirect("/");
+      } else next();
+    });
+  }
+  else res.redirect("/")
+}
+
 const requireAuth = (req, res, next) => {
   const token = req.cookies.jwt;
   if (token) {
@@ -32,6 +45,7 @@ const checkUser = (req, res, next) => {
 };
 
 module.exports = {
+  reqAccess,
   requireAuth,
   checkUser,
 };

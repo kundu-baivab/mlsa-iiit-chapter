@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opening Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form class="opening" action="">
+      <input type="password" placeholder="Password" required name="password" />
+      <button>ENTER</button>
+    </form>
+    <script>
+      const form = document.querySelector("form");
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        var pass = "letmein12345";
+        const password = form.password.value;
+        try {
+          const res = await fetch("/", {
+            method: "POST",
+            body: JSON.stringify({ password }),
+            // headers: { "Content Type": "application/json" },
+          });
+
+          const data = res.json();
+          console.log(data);
+
+          if (password === pass) location.assign("/adminlogin");
+          else alert("Wrong password! Try Again.")
+        } catch (error) {
+          console.log(error);
+        }
+        // if(password===pass) location.assign('/adminlogin')
+        // else alert("Wrong password! Try again.")
+      });
+    </script>
+  </body>
+</html>

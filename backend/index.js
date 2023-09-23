@@ -1,10 +1,11 @@
 const express=require('express');
 const cookieparser=require('cookie-parser');
 const mongoose=require('mongoose');
+const jwt=require('jsonwebtoken');
 
 const app=express();
 const authRoutes=require('./routes/authRoutes')
-const {requireAuth,checkUser}=require('./middlewares/authMiddlewares')
+const {requireAuth,checkUser,reqAccess}=require('./middlewares/authMiddlewares')
 
 app.set('view engine','ejs');
 
@@ -28,14 +29,22 @@ mongoose.connect(dbURL,{
 app.get('*',checkUser)
 
 app.get('/',(req,res)=>{
-    const token=req.cookies.jwt
-    if(token){
-        jwt.verify(token,"secret key",(err,decodedToken)=>{
-            if(err) res.render('login')
-            else res.render('main')
+    const tok=req.cookies.access
+    if(tok){
+        jwt.verify(tok,"sec key",(err,decodedToken)=>{
+            if(err) res.render('opening')
+            else res.render('login')
         })
     }
-    else res.render('login')
+    else res.render('opening')
+})
+
+app.get('/adminlogin',reqAccess,(req,res)=>{
+    res.render('login')
+})
+
+app.get('/adminsignup',reqAccess,(req,res)=>{
+    res.render('signup')
 })
 
 app.get('/main',requireAuth,(req,res)=>{
