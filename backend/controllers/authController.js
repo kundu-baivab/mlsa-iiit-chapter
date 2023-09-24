@@ -73,7 +73,7 @@ module.exports.opening_get = (req, res) => {
 };
 
 module.exports.opening_post = async (req, res) => {
-  const { password } = req.body;
+  // const { password } = req.body;
   try {
     const tok = createTok("letmein12345");
     res.cookie("access", tok, { httpOnly: true, maxAge: maxTime });
